@@ -1,0 +1,1031 @@
+[
+  {
+    "question": "Các phiên bản mô hình được phát hành chính thức của Llama 2 và Llama 2-Chat gồm những kích thước tham số nào?",
+    "status": "answered",
+    "answer": "Theo báo cáo [s3_p77_c0], các phiên bản mô hình được phát hành chính thức của Llama 2 và Llama 2-Chat gồm kích thước tham số 7B, 13B, và 70B (kèm theo các biến thể pretrained và fine-tuned).",
+    "citations": [
+      "s3_p77_c0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 official model parameter sizes",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 65.8,
+        "context_ids": [
+          "s3_p77_c0"
+        ],
+        "context_chars": 898
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo [s3_p77_c0], các phiên bản mô hình được phát hành chính thức của Llama 2 và Llama 2-Chat gồm kích thước tham số 7B, 13B, và 70B (kèm theo các biến thể pretrained và fine-tuned).",
+        "citations": [
+          "s3_p77_c0"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p77_c0 | data/llama2_paper.pdf | page 77]\nA.7 Model Card Table 52 presents a model card (Mitchell et al., 2018; Anil et al., 2023) that summarizes details of the models. Model Details Model Developers Meta AI Variations Llama 2 comes in a range of parameter sizes—7B, 13B, and 70B—as well as pretrained and fine-tuned variations. Input Models input text only. Output Models generate text only. Model Architecture Llama 2isanauto-regressivelanguagemodelthatusesanoptimizedtransformer architecture. The tuned versions use supervised fine-tuning (SFT) and reinforcement learning with human feedback (RLHF) to align to human preferences for helpfulness and safety. Model Dates Llama 2 was trained between January 2023 and July 2023. Status This is a static model trained on an offline dataset. Future versions of the tuned models will be released as we improve model safety with community feedback.",
+    "context_ids": [
+      "s3_p77_c0"
+    ],
+    "context_chars": 898,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 1969,
+      "output_tokens": 2208
+    },
+    "cost_usd": 0.00162,
+    "elapsed_ms": 29816.77,
+    "query_id": "Q01",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 4,
+        "evidence": "We are releasing variants ofLlama 2 with 7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper but are not releasing."
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Mô hình Llama 2 được tiền huấn luyện trên tổng lượng dữ liệu là bao nhiêu token?",
+    "status": "answered",
+    "answer": "Theo báo cáo [s3_p6_c0], mô hình Llama 2 được tiền huấn luyện trên 2.0 trillion (2T) token dữ liệu pretraining.",
+    "citations": [
+      "s3_p6_c0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 pre-training tokens",
+        "section": "Pretraining",
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 12.85,
+        "context_ids": [
+          "s3_p6_c0"
+        ],
+        "context_chars": 969
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo [s3_p6_c0], mô hình Llama 2 được tiền huấn luyện trên 2.0 trillion (2T) token dữ liệu pretraining.",
+        "citations": [
+          "s3_p6_c0"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p6_c0 | data/llama2_paper.pdf | page 6]\nTraining Data Params Context Length GQA Tokens LR Llama 1 See Touvron et al. (2023) 7B 2k ✗ 1.0T 3.0 × 10−4 13B 2k ✗ 1.0T 3.0 × 10−4 33B 2k ✗ 1.4T 1.5 × 10−4 65B 2k ✗ 1.4T 1.5 × 10−4 Llama 2 A new mix of publicly available online data 7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4 Table 1:Llama 2 family of models.Token counts refer to pretraining data only. All models are trained with a global batch-size of 4M tokens. Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability. 0 250 500 750 1000 1250 1500 1750 2000 Processed Tokens (Billions) 1.4 1.5 1.6 1.7 1.8 1.9 2.0 2.1 2.2Train PPL Llama-2 7B 13B 34B 70B Figure 5: Training Loss forLlama 2 models. We compare the training loss of theLlama 2 family of models. We observe that after pretraining on 2T Tokens, the models still did not show any sign of saturation. Tokenizer.",
+    "context_ids": [
+      "s3_p6_c0"
+    ],
+    "context_chars": 969,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 2200,
+      "output_tokens": 2456
+    },
+    "cost_usd": 0.001804,
+    "elapsed_ms": 32299.43,
+    "query_id": "Q02",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "We trained on 2 trillion tokens of data as this provides a good performance–cost trade-off"
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Độ dài ngữ cảnh (context length) của Llama 2 là bao nhiêu và thay đổi thế nào so với Llama 1?",
+    "status": "answered",
+    "answer": "Theo báo cáo [s3_p47_c0], Llama 2 có độ dài ngữ cảnh 4096 tokens, được mở rộng từ 2048 tokens của Llama 1.",
+    "citations": [
+      "s3_p47_c0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 context length Llama 1 difference",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 13.08,
+        "context_ids": [
+          "s3_p47_c0"
+        ],
+        "context_chars": 1035
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo [s3_p47_c0], Llama 2 có độ dài ngữ cảnh 4096 tokens, được mở rộng từ 2048 tokens của Llama 1.",
+        "citations": [
+          "s3_p47_c0"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p47_c0 | data/llama2_paper.pdf | page 47]\n• Armand Joulin, Edouard Grave, Guillaume Lample, and Timothee Lacroix, members of the original Llama team who helped get this work started. • Drew Hamlin, Chantal Mora, and Aran Mun, who gave us some design input on the figures in the paper. • Vijai Mohan for the discussions about RLHF that inspired our Figure 20, and his contribution to the internal demo. • Earlyreviewersofthispaper,whohelpedusimproveitsquality,includingMikeLewis,JoellePineau, Laurens van der Maaten, Jason Weston, and Omer Levy. A.2 Additional Details for Pretraining A.2.1 Architecture Changes Compared toLlama 1 Context Length. We expand the context window forLlama 2 from 2048 tokens to 4096 tokens. The longer context window enables models to process more information, which is particularly useful for supporting longer histories in chat applications, various summarization tasks, and understanding longer documents. Table 16 compares the performance of 2k and 4k context pretraining on long-context benchmarks.",
+    "context_ids": [
+      "s3_p47_c0"
+    ],
+    "context_chars": 1035,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 1996,
+      "output_tokens": 2228
+    },
+    "cost_usd": 0.001636,
+    "elapsed_ms": 28640.85,
+    "query_id": "Q03",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "trained on 40% more total tokens,doubledthecontextlength,andusedgrouped-queryattention(GQA)"
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4"
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Kỹ thuật Grouped-Query Attention (GQA) được sử dụng trong các mô hình kích thước nào của Llama 2 và nhằm mục đích gì?",
+    "status": "answered",
+    "answer": "Theo báo cáo [s3_p6_c0], kỹ thuật Grouped-Query Attention (GQA) được sử dụng cho các mô hình kích thước 34B và 70B nhằm mục đích cải thiện inference scalability.",
+    "citations": [
+      "s3_p6_c0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Grouped-Query Attention Llama 2 GQA model sizes",
+        "section": "Pretraining",
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 17.63,
+        "context_ids": [
+          "s3_p6_c0"
+        ],
+        "context_chars": 969
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo [s3_p6_c0], kỹ thuật Grouped-Query Attention (GQA) được sử dụng cho các mô hình kích thước 34B và 70B nhằm mục đích cải thiện inference scalability.",
+        "citations": [
+          "s3_p6_c0"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p6_c0 | data/llama2_paper.pdf | page 6]\nTraining Data Params Context Length GQA Tokens LR Llama 1 See Touvron et al. (2023) 7B 2k ✗ 1.0T 3.0 × 10−4 13B 2k ✗ 1.0T 3.0 × 10−4 33B 2k ✗ 1.4T 1.5 × 10−4 65B 2k ✗ 1.4T 1.5 × 10−4 Llama 2 A new mix of publicly available online data 7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4 Table 1:Llama 2 family of models.Token counts refer to pretraining data only. All models are trained with a global batch-size of 4M tokens. Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability. 0 250 500 750 1000 1250 1500 1750 2000 Processed Tokens (Billions) 1.4 1.5 1.6 1.7 1.8 1.9 2.0 2.1 2.2Train PPL Llama-2 7B 13B 34B 70B Figure 5: Training Loss forLlama 2 models. We compare the training loss of theLlama 2 family of models. We observe that after pretraining on 2T Tokens, the models still did not show any sign of saturation. Tokenizer.",
+    "context_ids": [
+      "s3_p6_c0"
+    ],
+    "context_chars": 969,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 2224,
+      "output_tokens": 3837
+    },
+    "cost_usd": 0.002636,
+    "elapsed_ms": 46511.48,
+    "query_id": "Q04",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability."
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Tokenizer của Llama 2 sử dụng thuật toán nào và kích thước từ vựng (vocabulary size) là bao nhiêu?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 tokenizer algorithm vocabulary size",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 12.34,
+        "context_ids": [
+          "s3_p6_c0"
+        ],
+        "context_chars": 969
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 tokenizer algorithm vocabulary size",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 0,
+        "tool_elapsed_ms": 13.29,
+        "context_ids": [
+          "s3_p6_c0"
+        ],
+        "context_chars": 969
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 tokenizer algorithm vocabulary size",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 0,
+        "tool_elapsed_ms": 13.22,
+        "context_ids": [
+          "s3_p6_c0"
+        ],
+        "context_chars": 969
+      },
+      {
+        "event": "search_limit_reached",
+        "step": 3
+      }
+    ],
+    "context": "[s3_p6_c0 | data/llama2_paper.pdf | page 6]\nTraining Data Params Context Length GQA Tokens LR Llama 1 See Touvron et al. (2023) 7B 2k ✗ 1.0T 3.0 × 10−4 13B 2k ✗ 1.0T 3.0 × 10−4 33B 2k ✗ 1.4T 1.5 × 10−4 65B 2k ✗ 1.4T 1.5 × 10−4 Llama 2 A new mix of publicly available online data 7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4 Table 1:Llama 2 family of models.Token counts refer to pretraining data only. All models are trained with a global batch-size of 4M tokens. Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability. 0 250 500 750 1000 1250 1500 1750 2000 Processed Tokens (Billions) 1.4 1.5 1.6 1.7 1.8 1.9 2.0 2.1 2.2Train PPL Llama-2 7B 13B 34B 70B Figure 5: Training Loss forLlama 2 models. We compare the training loss of theLlama 2 family of models. We observe that after pretraining on 2T Tokens, the models still did not show any sign of saturation. Tokenizer.",
+    "context_ids": [
+      "s3_p6_c0"
+    ],
+    "context_chars": 969,
+    "search_count": 3,
+    "total_tokens": {
+      "input_tokens": 4972,
+      "output_tokens": 6782
+    },
+    "cost_usd": 0.004815,
+    "elapsed_ms": 78111.83,
+    "query_id": "Q05",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "The total vocabulary size is 32k tokens."
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "SentencePiece (Kudo and Richardson, 2018)"
+      }
+    ],
+    "false_abstention": true
+  },
+  {
+    "question": "Trong phần tiền huấn luyện, những siêu tham số nào được thiết lập cho optimizer AdamW?",
+    "status": "answered",
+    "answer": "Theo báo cáo [s3_p5_c2], optimizer AdamW được thiết lập với các siêu tham số: β1 = 0.9, β2 = 0.95, và eps = 10^−5.",
+    "citations": [
+      "s3_p5_c2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 pre-training AdamW hyperparameters",
+        "section": "Pretraining",
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 12.71,
+        "context_ids": [
+          "s3_p5_c2"
+        ],
+        "context_chars": 1014
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo [s3_p5_c2], optimizer AdamW được thiết lập với các siêu tham số: β1 = 0.9, β2 = 0.95, và eps = 10^−5.",
+        "citations": [
+          "s3_p5_c2"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p5_c2 | data/llama2_paper.pdf | page 5]\n2.2 Training Details We adopt most of the pretraining setting and model architecture fromLlama 1. We use the standard transformer architecture (Vaswani et al., 2017), apply pre-normalization using RMSNorm (Zhang and Sennrich, 2019), use the SwiGLU activation function (Shazeer, 2020), and rotary positional embeddings (RoPE, Su et al. 2022). The primary architectural differences fromLlama 1 include increased context length and grouped-query attention (GQA). We detail in Appendix Section A.2.1 each of these differences with ablation experiments to demonstrate their importance. Hyperparameters. We trained using the AdamW optimizer (Loshchilov and Hutter, 2017), withβ1 = 0.9, β2 = 0.95,eps = 10−5. We use a cosine learning rate schedule, with warmup of 2000 steps, and decay final learning rate down to 10% of the peak learning rate. We use a weight decay of0.1and gradient clipping of 1.0. Figure 5 (a) shows the training loss forLlama 2 with these hyperparameters.",
+    "context_ids": [
+      "s3_p5_c2"
+    ],
+    "context_chars": 1014,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 2009,
+      "output_tokens": 2111
+    },
+    "cost_usd": 0.001568,
+    "elapsed_ms": 31169.91,
+    "query_id": "Q06",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "AdamW optimizer (Loshchilov and Hutter, 2017), withβ1 = 0.9, β2 = 0.95,eps = 10−5."
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Tổng lượng khí thải carbon footprint phát sinh từ quá trình pretraining Llama 2 ước tính là bao nhiêu tấn CO2eq?",
+    "status": "answered",
+    "answer": "Theo báo cáo [s3_p7_c0], tổng lượng khí thải carbon footprint phát sinh từ quá trình pretraining Llama 2 ước tính là 539.00 tấn CO2eq.",
+    "citations": [
+      "s3_p7_c0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 pretraining carbon footprint CO2eq",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 14.05,
+        "context_ids": [
+          "s3_p7_c0"
+        ],
+        "context_chars": 1025
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo [s3_p7_c0], tổng lượng khí thải carbon footprint phát sinh từ quá trình pretraining Llama 2 ước tính là 539.00 tấn CO2eq.",
+        "citations": [
+          "s3_p7_c0"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p7_c0 | data/llama2_paper.pdf | page 7]\nTime (GPU hours) Power Consumption (W) Carbon Emitted (tCO2eq) Llama 2 7B 184320 400 31.22 13B 368640 400 62.44 34B 1038336 350 153.90 70B 1720320 400 291.42 Total 3311616 539.00 Table 2:CO2 emissions during pretraining.Time: total GPU time required for training each model. Power Consumption: peak power capacity per GPU device for the GPUs used adjusted for power usage efficiency. 100%oftheemissionsaredirectlyoffsetbyMeta’ssustainabilityprogram,andbecauseweareopenlyreleasing these models, the pretraining costs do not need to be incurred by others. can scale almost as well as expensive Infiniband up to 2000 GPUs, which makes pretraining even more democratizable. Carbon Footprint of Pretraining. Following preceding research (Bender et al., 2021a; Patterson et al., 2021; Wu et al., 2022; Dodge et al., 2022) and using power consumption estimates of GPU devices and carbon efficiency, we aim to calculate the carbon emissions resulting from the pretraining ofLlama 2 models.",
+    "context_ids": [
+      "s3_p7_c0"
+    ],
+    "context_chars": 1025,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 2087,
+      "output_tokens": 1586
+    },
+    "cost_usd": 0.001265,
+    "elapsed_ms": 21447.16,
+    "query_id": "Q07",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 7,
+        "evidence": "We estimate the total emissions for training to be539 tCO2eq, of which 100% were directly offset by Meta’s sustainability program."
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 7,
+        "evidence": "Total 3311616 539.00 Table 2:CO2 emissions during pretraining."
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Trong giai đoạn Supervised Fine-Tuning (SFT), nhóm tác giả đã thu thập bao nhiêu mẫu chú thích chất lượng cao trước khi dừng lại?",
+    "status": "answered",
+    "answer": "Nhóm tác giả đã thu thập 27,540 mẫu chú thích chất lượng cao trước khi dừng lại giai đoạn SFT [s3_p9_c2].",
+    "citations": [
+      "s3_p9_c2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 SFT high-quality annotated dataset size",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 13.6,
+        "context_ids": [
+          "s3_p9_c2"
+        ],
+        "context_chars": 1008
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Nhóm tác giả đã thu thập 27,540 mẫu chú thích chất lượng cao trước khi dừng lại giai đoạn SFT [s3_p9_c2].",
+        "citations": [
+          "s3_p9_c2"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p9_c2 | data/llama2_paper.pdf | page 9]\nBy setting aside millions of examples from third-party datasets and using fewer but higher-quality examples from our own vendor-based annotation efforts, our results notably improved. These findingsaresimilarinspirittoZhouetal.(2023),whichalsofindsthatalimitedsetofcleaninstruction-tuning data can be sufficient to reach a high level of quality. We found that SFT annotations in the order of tens of thousands was enough to achieve a high-quality result. We stopped annotating SFT after collecting a total of 27,540 annotations. Note that we do not include any Meta user data. We also observed that different annotation platforms and vendors can result in markedly different downstream model performance, highlighting the importance of data checks even when using vendors to source annotations. Tovalidateourdataquality,wecarefullyexaminedasetof180examples,comparingtheannotations provided by humans with the samples generated by the model through manual scrutiny.",
+    "context_ids": [
+      "s3_p9_c2"
+    ],
+    "context_chars": 1008,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 1965,
+      "output_tokens": 2005
+    },
+    "cost_usd": 0.001498,
+    "elapsed_ms": 19634.38,
+    "query_id": "Q08",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 9,
+        "evidence": "We stopped annotating SFT after collecting a total of 27,540 annotations."
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Trong giai đoạn Reward Modeling của RLHF, hai mô hình phần thưởng riêng biệt được huấn luyện nhằm tối ưu cho hai khía cạnh nào?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "reward modeling RLHF two reward models optimize aspects",
+        "section": "Fine-tuning",
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 12.41,
+        "context_ids": [
+          "s3_p13_c3"
+        ],
+        "context_chars": 842
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "reward model two aspects RLHF",
+        "section": "Fine-tuning",
+        "retrieved_count": 3,
+        "new_added": 1,
+        "tool_elapsed_ms": 11.54,
+        "context_ids": [
+          "s3_p13_c3"
+        ],
+        "context_chars": 842
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "RLHF reward model two aspects",
+        "section": "Fine-tuning",
+        "retrieved_count": 3,
+        "new_added": 0,
+        "tool_elapsed_ms": 12.81,
+        "context_ids": [
+          "s3_p13_c3"
+        ],
+        "context_chars": 842
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Không đủ bằng chứng để trả lời.",
+        "citations": [],
+        "status": "abstain"
+      }
+    ],
+    "context": "[s3_p13_c3 | data/llama2_paper.pdf | page 13]\n3.2.3 Iterative Fine-Tuning As we received more batches of human preference data annotation, we were able to train better reward models and collect more prompts. We therefore trained successive versions for RLHF models, referred to here as RLHF-V1, ..., RLHF-V5. We explored RLHF fine-tuning with two main algorithms: • Proximal Policy Optimization (PPO)(Schulman et al., 2017), the standard in RLHF literature. • RejectionSamplingfine-tuning . Wesample K outputsfromthemodelandselectthebestcandidate with our reward, consistent with Bai et al. (2022b). The same re-ranking strategy for LLMs was also proposed inDeng et al. (2019), where the rewardis seen asan energy function. Here, we go onestep further, and use the selected outputs for a gradient update. For each prompt, the sample obtaining",
+    "context_ids": [
+      "s3_p13_c3"
+    ],
+    "context_chars": 842,
+    "search_count": 3,
+    "total_tokens": {
+      "input_tokens": 4204,
+      "output_tokens": 11434
+    },
+    "cost_usd": 0.007491,
+    "elapsed_ms": 130122.82,
+    "query_id": "Q09",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 10,
+        "evidence": "To address this, we train two separate reward models, one optimized for helpfulness (referred to asHelpfulness RM) and another for safety (Safety RM)."
+      }
+    ],
+    "false_abstention": true
+  },
+  {
+    "question": "Hai thuật toán học tăng cường chính nào được kết hợp áp dụng qua các vòng lặp RLHF của Llama 2-Chat?",
+    "status": "answered",
+    "answer": "Theo báo cáo Llama 2-Chat, hai thuật toán học tăng cường chính được kết hợp áp dụng qua các vòng lặp RLHF là rejection sampling và Proximal Policy Optimization (PPO) [s3_p5_c0].",
+    "citations": [
+      "s3_p5_c0"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 Chat RLHF reinforcement learning",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 13.21,
+        "context_ids": [
+          "s3_p5_c0",
+          "s3_p9_c4"
+        ],
+        "context_chars": 1174
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo Llama 2-Chat, hai thuật toán học tăng cường chính được kết hợp áp dụng qua các vòng lặp RLHF là rejection sampling và Proximal Policy Optimization (PPO) [s3_p5_c0].",
+        "citations": [
+          "s3_p5_c0"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p5_c0 | data/llama2_paper.pdf | page 5]\nFigure 4: Training ofLlama 2-Chat: This process begins with thepretraining of Llama 2 using publicly available online sources. Following this, we create an initial version ofLlama 2-Chatthrough the application of supervised fine-tuning. Subsequently, the model is iteratively refined using Reinforcement Learning with Human Feedback(RLHF) methodologies, specifically through rejection sampling and Proximal Policy Optimization (PPO). Throughout the RLHF stage, the accumulation ofiterative reward modeling datain parallel with model enhancements is crucial to ensure the reward models remain within distribution. 2 Pretraining Tocreatethenewfamilyof Llama 2models,webeganwiththepretrainingapproachdescribedinTouvronetal. (2023), using an optimized auto-regressive transformer, but made several changes to improve performance.\n\n[s3_p9_c4 | data/llama2_paper.pdf | page 9]\n3.2 Reinforcement Learning with Human Feedback (RLHF) RLHF is a model training procedure that is applied to a fine-tuned language model to furtheralignmodel behavior with human preferences and instruction following. We collect data that represents empirically",
+    "context_ids": [
+      "s3_p5_c0",
+      "s3_p9_c4"
+    ],
+    "context_chars": 1174,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 2001,
+      "output_tokens": 2796
+    },
+    "cost_usd": 0.001978,
+    "elapsed_ms": 33954.42,
+    "query_id": "Q10",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 13,
+        "evidence": "We explored RLHF fine-tuning with two main algorithms: • Proximal Policy Optimization (PPO)(Schulman et al., 2017), the standard in RLHF literature. • RejectionSamplingfine-tuning"
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Phương pháp Ghost Attention (GAtt) được đề xuất nhằm giải quyết vấn đề gì trong các cuộc hội thoại?",
+    "status": "answered",
+    "answer": "Theo báo cáo, Ghost Attention (GAtt) được đề xuất nhằm giải quyết vấn đề các mô hình RLHF thường quên lệnh ban đầu sau một vài lượt hội thoại [s3_p16_c1].",
+    "citations": [
+      "s3_p16_c1"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Ghost Attention GAtt large language model conversation",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 12.14,
+        "context_ids": [
+          "s3_p16_c1"
+        ],
+        "context_chars": 975
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo, Ghost Attention (GAtt) được đề xuất nhằm giải quyết vấn đề các mô hình RLHF thường quên lệnh ban đầu sau một vài lượt hội thoại [s3_p16_c1].",
+        "citations": [
+          "s3_p16_c1"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p16_c1 | data/llama2_paper.pdf | page 16]\nHowever, our initial RLHF models tended to forget the initial instruction after a few turns of dialogue, as illustrated in Figure 9 (left). To address these limitations, we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation (Bai et al., 2022b) that hacks the fine-tuning data to help the attention focus in a multi-stage process. GAtt enables dialogue control over multiple turns, as illustrated in Figure 9 (right). GAtt Method. Assume we have access to a multi-turn dialogue dataset between two persons (e.g., a user and an assistant), with a list of messages[u1, a1, . . . , un, an], whereun and an correspond to the user and assistant messages for turnn, respectively. Then, we define an instruction,inst, that should be respected throughout the dialogue. For example,inst could be“act as.”We can then synthetically concatenate this instruction to all the user messages of the conversation.",
+    "context_ids": [
+      "s3_p16_c1"
+    ],
+    "context_chars": 975,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 1954,
+      "output_tokens": 1882
+    },
+    "cost_usd": 0.001422,
+    "elapsed_ms": 19195.87,
+    "query_id": "Q11",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 16,
+        "evidence": "To address these limitations, we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation (Bai et al., 2022b) that hacks the fine-tuning data to help the attention focus in a multi-stage process. GAtt enables dialogue control over multiple turns"
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Trên bộ benchmark MMLU (5-shot), mô hình pretrained Llama 2 70B đạt kết quả chính xác bao nhiêu phần trăm?",
+    "status": "answered",
+    "answer": "Theo báo cáo [s3_p8_c2], trên bộ benchmark MMLU (5-shot), mô hình Llama 2 đạt chính xác 68.9 phần trăm.",
+    "citations": [
+      "s3_p8_c2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 70B MMLU 5-shot accuracy",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 13.04,
+        "context_ids": [
+          "s3_p8_c2"
+        ],
+        "context_chars": 896
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo báo cáo [s3_p8_c2], trên bộ benchmark MMLU (5-shot), mô hình Llama 2 đạt chính xác 68.9 phần trăm.",
+        "citations": [
+          "s3_p8_c2"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p8_c2 | data/llama2_paper.pdf | page 8]\nWe also analysed the potential data contamination and share the details in Section A.6. Benchmark (shots) GPT-3.5 GPT-4 PaLM PaLM-2-L Llama 2 MMLU (5-shot) 70.0 86.4 69.3 78.3 68.9 TriviaQA (1-shot) – – 81.4 86.1 85.0 Natural Questions (1-shot) – – 29.3 37.5 33.0 GSM8K (8-shot) 57.1 92.0 56.5 80.7 56.8 HumanEval (0-shot) 48.1 67.0 26.2 – 29.9 BIG-Bench Hard (3-shot) – – 52.3 65.7 51.2 Table 4: Comparison to closed-source modelson academic benchmarks. Results for GPT-3.5 and GPT-4 are from OpenAI (2023). Results for the PaLM model are from Chowdhery et al. (2022). Results for the PaLM-2-L are from Anil et al. (2023). 3 Fine-tuning Llama 2-Chat is the result of several months of research and iterative applications of alignment techniques, including both instruction tuning and RLHF, requiring significant computational and annotation resources.",
+    "context_ids": [
+      "s3_p8_c2"
+    ],
+    "context_chars": 896,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 2096,
+      "output_tokens": 1915
+    },
+    "cost_usd": 0.001463,
+    "elapsed_ms": 19903.95,
+    "query_id": "Q12",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 8,
+        "evidence": "MMLU (5-shot) 70.0 86.4 69.3 78.3 68.9"
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Trên bộ benchmark lập trình HumanEval (0-shot pass@1), phiên bản Llama 2 70B đạt kết quả là bao nhiêu?",
+    "status": "answered",
+    "answer": "Theo bảng kết quả trên [s3_p49_c2], trên bộ benchmark HumanEval (0-shot pass@1), phiên bản Llama 2 70B đạt kết quả là 29.9.",
+    "citations": [
+      "s3_p49_c2"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 70B HumanEval pass@1 0-shot",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 12.85,
+        "context_ids": [
+          "s3_p49_c2",
+          "s3_p50_c1"
+        ],
+        "context_chars": 1297
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Theo bảng kết quả trên [s3_p49_c2], trên bộ benchmark HumanEval (0-shot pass@1), phiên bản Llama 2 70B đạt kết quả là 29.9.",
+        "citations": [
+          "s3_p49_c2"
+        ],
+        "status": "answered"
+      }
+    ],
+    "context": "[s3_p49_c2 | data/llama2_paper.pdf | page 49]\nHuman-Eval MBPP pass@1 pass@100 pass@1 pass@80 MPT 7B 18.3 - 22.6 - 30B 25.0 - 32.8 - Falcon 7B 0.0 - 11.2 - 40B 0.6 - 29.8 - Llama 1 7B 10.5 36.5 17.7 56.2 13B 15.8 52.5 22.0 64.0 33B 21.7 70.7 30.2 73.4 65B 23.7 79.3 37.7 76.8 Llama 2 7B 12.8 45.6 20.8 62.8 13B 18.3 60.2 30.6 69.0 34B 22.6 77.2 33.0 76.1 70B 29.9 89.0 45.0 81.4 Table 21: Code generation results on Human-Eval and MBPP. We report 0-shot and 3-shot results for Human-Eval and MBPP respectively. For pass@100 and pass@80 scores, we use a temperature of 0.8 and top-p=0.95. For pass@1 scores, we use a temperature of 0.1 and top-p=0.95.\n\n[s3_p50_c1 | data/llama2_paper.pdf | page 50]\nSQUAD (EM) QUAC (f1) Model Size 0-shot 1-shot 4-shot 5-shot 0-shot 1-shot MPT 7B 59.5 62.8 62.6 62.7 38.0 37.7 MPT 30B 74.7 74.2 72.4 74.2 40.4 41.1 Falcon 7B 16.4 16.0 16.9 17.5 24.0 18.8 Falcon 40B 72.9 73.1 71.7 71.0 41.2 43.3 Llama 1 7B 60.0 62.3 63.3 62.8 38.9 32.0 13B 68.9 68.4 66.4 66.7 39.9 36.5 33B 75.5 77.0 76.3 75.6 44.1 40.3 65B 79.4 80.0 78.3 77.9 41.0 39.8 Llama 2 7B 67.2 72.3 72.6 72.5 39.4 39.7 13B 72.9 72.1 70.6 71.3 42.7 44.8 34B 77.4 78.8 77.5 77.5 42.9 44.4 70B 80.7 82.6 81.9 81.9 42.4 49.3 Table 23:Comparison to open-source models on reading comprehension (SQUAD and QUAC).",
+    "context_ids": [
+      "s3_p49_c2",
+      "s3_p50_c1"
+    ],
+    "context_chars": 1297,
+    "search_count": 1,
+    "total_tokens": {
+      "input_tokens": 2632,
+      "output_tokens": 3477
+    },
+    "cost_usd": 0.002481,
+    "elapsed_ms": 38054.81,
+    "query_id": "Q13",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 8,
+        "evidence": "HumanEval (0-shot) 48.1 67.0 26.2 – 29.9"
+      }
+    ],
+    "false_abstention": false
+  },
+  {
+    "question": "Tỷ lệ dữ liệu tiếng Anh chiếm khoảng bao nhiêu phần trăm trong tập dữ liệu tiền huấn luyện của Llama 2?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 pre-training dataset English percentage",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 11.73,
+        "context_ids": [
+          "s3_p34_c2"
+        ],
+        "context_chars": 883
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 pretraining dataset English percentage",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 0,
+        "tool_elapsed_ms": 13.34,
+        "context_ids": [
+          "s3_p34_c2"
+        ],
+        "context_chars": 883
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 pre-training dataset English percentage",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 0,
+        "tool_elapsed_ms": 12.49,
+        "context_ids": [
+          "s3_p34_c2"
+        ],
+        "context_chars": 883
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Không đủ bằng chứng để trả lời.",
+        "citations": [],
+        "status": "abstain"
+      }
+    ],
+    "context": "[s3_p34_c2 | data/llama2_paper.pdf | page 34]\nWhile our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+    "context_ids": [
+      "s3_p34_c2"
+    ],
+    "context_chars": 883,
+    "search_count": 3,
+    "total_tokens": {
+      "input_tokens": 4079,
+      "output_tokens": 8044
+    },
+    "cost_usd": 0.005438,
+    "elapsed_ms": 83117.59,
+    "query_id": "Q14",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 22,
+        "evidence": "Language Percent Language Percent en 89.70% uk 0.07% unknown 8.38% ko 0.06%"
+      }
+    ],
+    "false_abstention": true
+  },
+  {
+    "question": "Trong phần Fine-tuning về Safety, các câu nhắc (prompts) có yếu tố rủi ro được phân loại thành ba danh mục chính nào?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 safety fine-tuning prompt risk categories",
+        "section": "Safety",
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 14.63,
+        "context_ids": [
+          "s3_p31_c0"
+        ],
+        "context_chars": 870
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 safety fine-tuning risk categories three main categories prompts",
+        "section": "Safety",
+        "retrieved_count": 3,
+        "new_added": 1,
+        "tool_elapsed_ms": 13.2,
+        "context_ids": [
+          "s3_p31_c0"
+        ],
+        "context_chars": 870
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 2 safety fine-tuning prompt risk categories",
+        "section": "Safety",
+        "retrieved_count": 3,
+        "new_added": 0,
+        "tool_elapsed_ms": 10.91,
+        "context_ids": [
+          "s3_p31_c0"
+        ],
+        "context_chars": 870
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Không đủ bằng chứng để trả lời.",
+        "citations": [],
+        "status": "abstain"
+      }
+    ],
+    "context": "[s3_p31_c0 | data/llama2_paper.pdf | page 31]\nFigure 19: Violation percentage per risk category.Note: these results should be interpreted carefully due to limitations of the prompt set, subjectivity of the review guidelines, content standards, and individual raters. InFigure18,wereporttheviolationpercentageonsingle-andmulti-turnconversations,respectively. Atrend acrossmodelsisthatmulti-turnconversationsaremorepronetoinducingunsaferesponses. Thatsaid, Llama 2-Chatstill performs well compared to baselines, especially on multi-turn conversations. We also observe that Falcon performs particularly well on single-turn conversations (largely due to its conciseness) but much worse on multi-turn conversations, which could be due to its lack of multi-turn supervised fine-tuning data. In Figure 19, we show the per-category safety violation percentage of different LLMs.",
+    "context_ids": [
+      "s3_p31_c0"
+    ],
+    "context_chars": 870,
+    "search_count": 3,
+    "total_tokens": {
+      "input_tokens": 4155,
+      "output_tokens": 6524
+    },
+    "cost_usd": 0.004538,
+    "elapsed_ms": 62059.31,
+    "query_id": "Q15",
+    "split": "dev",
+    "is_answerable": true,
+    "expected_behavior": "search_and_answer",
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 23,
+        "evidence": "Theriskcategoriesconsideredcanbebroadlydividedintothefollowingthreecategories: illicitandcriminal activities(e.g., terrorism, theft, human trafficking);hateful and harmful activities"
+      }
+    ],
+    "false_abstention": true
+  },
+  {
+    "question": "Kiến trúc mô hình Llama 3 sử dụng cơ chế nào để mở rộng độ dài ngữ cảnh lên 128k tokens?",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 3 128k context length mechanism",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 3,
+        "tool_elapsed_ms": 13.16,
+        "context_ids": [
+          "s3_p47_c0"
+        ],
+        "context_chars": 1035
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 3 context length 128k mechanism",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 1,
+        "tool_elapsed_ms": 11.86,
+        "context_ids": [
+          "s3_p47_c0"
+        ],
+        "context_chars": 1035
+      },
+      {
+        "event": "search",
+        "tool": "hybrid_search",
+        "query": "Llama 3 128k context length architecture",
+        "section": null,
+        "retrieved_count": 3,
+        "new_added": 0,
+        "tool_elapsed_ms": 11.87,
+        "context_ids": [
+          "s3_p47_c0"
+        ],
+        "context_chars": 1035
+      },
+      {
+        "event": "answer",
+        "raw_answer": "Không đủ bằng chứng để trả lời.",
+        "citations": [],
+        "status": "abstain"
+      }
+    ],
+    "context": "[s3_p47_c0 | data/llama2_paper.pdf | page 47]\n• Armand Joulin, Edouard Grave, Guillaume Lample, and Timothee Lacroix, members of the original Llama team who helped get this work started. • Drew Hamlin, Chantal Mora, and Aran Mun, who gave us some design input on the figures in the paper. • Vijai Mohan for the discussions about RLHF that inspired our Figure 20, and his contribution to the internal demo. • Earlyreviewersofthispaper,whohelpedusimproveitsquality,includingMikeLewis,JoellePineau, Laurens van der Maaten, Jason Weston, and Omer Levy. A.2 Additional Details for Pretraining A.2.1 Architecture Changes Compared toLlama 1 Context Length. We expand the context window forLlama 2 from 2048 tokens to 4096 tokens. The longer context window enables models to process more information, which is particularly useful for supporting longer histories in chat applications, various summarization tasks, and understanding longer documents. Table 16 compares the performance of 2k and 4k context pretraining on long-context benchmarks.",
+    "context_ids": [
+      "s3_p47_c0"
+    ],
+    "context_chars": 1035,
+    "search_count": 3,
+    "total_tokens": {
+      "input_tokens": 4310,
+      "output_tokens": 7634
+    },
+    "cost_usd": 0.005227,
+    "elapsed_ms": 60465.27,
+    "query_id": "Q21",
+    "split": "dev",
+    "is_answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "abstention_correct": true
+  },
+  {
+    "question": "Chi phí tiền điện và tổng kinh phí tài chính cụ thể bằng đô la Mỹ (USD) để huấn luyện cụm GPU cho mô hình Llama 2 70B là bao nhiêu?",
+    "status": "error",
+    "answer": "Lỗi hệ thống: Error code: 429 - Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit",
+    "citations": [],
+    "events": [
+      {
+        "event": "error",
+        "error_message": "Error code: 429 - Rate limit exceeded: free-models-per-day. Add 10 credits to unlock 1000 free model requests per day: https://openrouter.ai/settings/credits?utm_source=api&utm_campaign=free_daily_limit"
+      }
+    ],
+    "context": "",
+    "context_ids": [],
+    "context_chars": 0,
+    "search_count": 0,
+    "total_tokens": {
+      "input_tokens": 0,
+      "output_tokens": 0
+    },
+    "cost_usd": 0.0,
+    "elapsed_ms": 1433.4,
+    "query_id": "Q22",
+    "split": "dev",
+    "is_answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "gold": [],
+    "abstention_correct": false
+  }
+]

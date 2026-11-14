@@ -1,0 +1,402 @@
+[
+  {
+    "query_id": "Q16",
+    "split": "test",
+    "question": "Kiến trúc Transformer của Llama 2 sử dụng những kỹ thuật tiền chuẩn hóa, hàm kích hoạt và mã hóa vị trí nào?",
+    "strategy": "Lexical BM25",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "We use the standard transformer architecture (Vaswani et al., 2017), apply pre-normalization using RMSNorm (Zhang and Sennrich, 2019), use the SwiGLU activation function (Shazeer, 2020), and rotary positional embeddings (RoPE, Su et al. 2022)."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p5_c0",
+        "text": "Figure 4: Training ofLlama 2-Chat: This process begins with thepretraining of Llama 2 using publicly available online sources. Following this, we create an initial version ofLlama 2-Chatthrough the application of supervised fine-tuning. Subsequently, the model is iteratively refined using Reinforcement Learning with Human Feedback(RLHF) methodologies, specifically through rejection sampling and Proximal Policy Optimization (PPO). Throughout the RLHF stage, the accumulation ofiterative reward modeling datain parallel with model enhancements is crucial to ensure the reward models remain within distribution. 2 Pretraining Tocreatethenewfamilyof Llama 2models,webeganwiththepretrainingapproachdescribedinTouvronetal. (2023), using an optimized auto-regressive transformer, but made several changes to improve performance.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 5,
+        "metadata": {
+          "section": "Pretraining",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 0,
+          "char_length": 825,
+          "doc_id": "llama2_paper"
+        },
+        "score": 7.3466,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p7_c2",
+        "text": "2.3 Llama 2 Pretrained Model Evaluation In this section, we report the results for theLlama 1 and Llama 2 base models, MosaicML Pretrained Transformer(MPT) ††models,andFalcon(Almazroueietal.,2023)modelsonstandardacademicbenchmarks. For all the evaluations, we use our internal evaluations library. We reproduce results for the MPT and Falcon models internally. For these models, we always pick the best score between our evaluation framework and any publicly reported results. In Table 3, we summarize the overall performance across a suite of popular benchmarks. Note that safety benchmarks are shared in Section 4.1. The benchmarks are grouped into the categories listed below. The results for all the individual benchmarks are available in Section A.2.2. • Code. We report the average pass@1 scores of our models on HumanEval (Chen et al., 2021) and MBPP (Austin et al., 2021). • CommonsenseReasoning.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 7,
+        "metadata": {
+          "section": "Pretraining",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "char_length": 904,
+          "doc_id": "llama2_paper"
+        },
+        "score": 6.6609,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p43_c1",
+        "text": "In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pages 12007–12021, Abu Dhabi, United Arab Emirates, December 2022. Association for Computational Linguistics. URL https://aclanthology.org/2022.emnlp-main.823. Noam Shazeer. Fast transformer decoding: One write-head is all you need, 2019. Noam Shazeer. Glu variants improve transformer, 2020. Mohammad Shoeybi, Mostofa Patwary, Raul Puri, Patrick LeGresley, Jared Casper, and Bryan Catanzaro. Megatron-lm: Training multi-billion parameter language models using model parallelism, 2019. Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Yarin Gal, Nicolas Papernot, and Ross Anderson. The curse of recursion: Training on generated data makes models forget.arXiv preprint arxiv:2305.17493, 2023. Eric Michael Smith and Adina Williams. Hi, my name is martha: Using names to measure and mitigate bias in generative dialogue models.arXiv preprint arXiv:2109.03300, 2021.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 43,
+        "metadata": {
+          "section": "References",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 1,
+          "char_length": 952,
+          "doc_id": "llama2_paper"
+        },
+        "score": 5.1381,
+        "strategy": "bm25",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p5_c0 | data/llama2_paper.pdf | page 5]\nFigure 4: Training ofLlama 2-Chat: This process begins with thepretraining of Llama 2 using publicly available online sources. Following this, we create an initial version ofLlama 2-Chatthrough the application of supervised fine-tuning. Subsequently, the model is iteratively refined using Reinforcement Learning with Human Feedback(RLHF) methodologies, specifically through rejection sampling and Proximal Policy Optimization (PPO). Throughout the RLHF stage, the accumulation ofiterative reward modeling datain parallel with model enhancements is crucial to ensure the reward models remain within distribution. 2 Pretraining Tocreatethenewfamilyof Llama 2models,webeganwiththepretrainingapproachdescribedinTouvronetal. (2023), using an optimized auto-regressive transformer, but made several changes to improve performance.",
+    "context_ids": [
+      "s3_p5_c0"
+    ],
+    "context_chars": 869,
+    "elapsed_ms": 1.44,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q17",
+    "split": "test",
+    "question": "Quá trình fine-tuning có giám sát (SFT) được cấu hình với các siêu tham số learning rate, batch size và sequence length là bao nhiêu?",
+    "strategy": "Lexical BM25",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 9,
+        "evidence": "For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p9_c3",
+        "text": "Surprisingly, we found that the outputs sampled from the resulting SFT model were often competitive with SFT data handwritten by human annotators, suggesting that we could reprioritize and devote more annotation effort to preference-based annotation for RLHF. Fine-Tuning Details. For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens. For the fine-tuning process, each sample consists of a prompt and an answer. To ensure the model sequence length is properly filled, we concatenate all the prompts and answers from the training set. A special token is utilized to separate the prompt and answer segments. We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens. Finally, we fine-tune the model for 2 epochs.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 9,
+        "metadata": {
+          "section": "Fine-tuning",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 3,
+          "char_length": 936,
+          "doc_id": "llama2_paper"
+        },
+        "score": 31.3713,
+        "strategy": "bm25",
+        "hit": true
+      },
+      {
+        "id": "s3_p47_c1",
+        "text": "Both modelsaretrainedfor150Btokens,keepingthesamearchitectureandhyperparametersasabaseline,varying only the context length. We observe improvement on SCROLLS (Shaham et al., 2022), where the average input length is 3.5k, and no performance degradation on SQUAD (Rajpurkar et al., 2018). Table 17 shows that the longer context model retains strong performance on various general-purpose tasks. Grouped-Query Attention. A standard practice for autoregressive decoding is to cache the key (K) and value (V) pairs for the previous tokens in the sequence, speeding up attention computation. With increasing context windows or batch sizes, however, the memory costs associated with the KV cache size in multi-head attention (MHA) models grow significantly. For larger models, where KV cache size becomes a bottleneck, key and value projections can be shared across multiple heads without much degradation of performance (Chowdheryetal.,2022).",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 47,
+        "metadata": {
+          "section": "Appendix",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 1,
+          "char_length": 936,
+          "doc_id": "llama2_paper"
+        },
+        "score": 15.5028,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p15_c4",
+        "text": "Rc(g | p) = \u001aRs(g | p) if is_safety(p) or Rs(g | p) < 0.15 Rh(g | p) otherwise ˜Rc(g | p) = whiten(logit(Rc(g | p))) For all models, we use the AdamW optimizer (Loshchilov and Hutter, 2017), withβ1 = 0.9, β2 = 0.95,eps = 10−5. We use a weight decay of0.1, gradient clipping of1.0, and a constant learning rate of10−6. For each PPO iteration we use a batch size of512, a PPO clip threshold of0.2, a mini-batch size of64, and take one gradient step per mini-batch. For the 7B and 13B models, we setβ = 0.01(KL penalty), and for the 34B and 70B models, we setβ = 0.005.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 15,
+        "metadata": {
+          "section": "Fine-tuning",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 4,
+          "char_length": 566,
+          "doc_id": "llama2_paper"
+        },
+        "score": 14.4174,
+        "strategy": "bm25",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p9_c3 | data/llama2_paper.pdf | page 9]\nSurprisingly, we found that the outputs sampled from the resulting SFT model were often competitive with SFT data handwritten by human annotators, suggesting that we could reprioritize and devote more annotation effort to preference-based annotation for RLHF. Fine-Tuning Details. For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens. For the fine-tuning process, each sample consists of a prompt and an answer. To ensure the model sequence length is properly filled, we concatenate all the prompts and answers from the training set. A special token is utilized to separate the prompt and answer segments. We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens. Finally, we fine-tune the model for 2 epochs.",
+    "context_ids": [
+      "s3_p9_c3"
+    ],
+    "context_chars": 980,
+    "elapsed_ms": 1.3,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "mrr": 1.0,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q18",
+    "split": "test",
+    "question": "Ba bộ benchmark tự động nào được Meta sử dụng để đánh giá an toàn về Truthfulness, Toxicity và Bias?",
+    "strategy": "Lexical BM25",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 22,
+        "evidence": "We chooseToxiGen(Hartvigsen et al., 2022) to measure the amount of generation of toxic language and hate speech across different groups. 3. Bias, defined as how model generations reproduce existing stereotypical social biases. We use BOLD"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p69_c2",
+        "text": "To study the sentiment in model generations that may vary with demographic attributes, we choose BOLD (Dhamala et al., 2021), a large-scale bias benchmark that comprises 23,679 English Wikipedia prompts spanning five domains of race, gender, religion, political ideology, and profession, with 43 different subgroups∗∗∗. We conduct a sentiment analysis using the Valence Aware Dictionary and Sentiment Reasoner (VADER)(HuttoandGilbert,2014)toevaluatethesentimentsconveyedbythecombinationofpromptprefix and model generation. VADER produces a sentiment score between -1 and 1. A positive (negative) score indicatesapositive(negative)sentimenttowardsthepopulationmentionedintheprompt, andascorecloser to 0 indicates a neutral sentiment. A.4.8 Automatic Safety Benchmark Evaluation Results Fine-grained Analysis of Toxicity, Truthfulness, and Bias.Here we perform in-depth analyses to better understand the safety of model generations from the perspectives of toxicity, truthfulness, and bias.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 69,
+        "metadata": {
+          "section": "Appendix",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "char_length": 988,
+          "doc_id": "llama2_paper"
+        },
+        "score": 19.8959,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p31_c1",
+        "text": "While model performanceissimilaracrosscategories, Llama 2-Chathasrelativelymoreviolationsunderthe unqualifiedadvice category (although still low in an absolute sense), for various reasons, including lack of an appropriate disclaimer (e.g.,“I am not a professional”) at times. For the other two categories,Llama 2-Chat achieves comparable or lower violation percentage consistently regardless of model sizes. Truthfulness, Toxicity, and Bias.In Table 14, fine-tunedLlama 2-Chat shows great improvement over the pretrainedLlama 2 in terms of truthfulness (50.18 → 64.14 for 70B) and toxicity (24.60 → 0.01 for 70B). The percentage of toxic generations shrinks to effectively 0% forLlama 2-Chat of all sizes: this is the lowest toxicity level among all compared models. In general, when compared to Falcon and MPT, the fine-tuned Llama 2-Chat shows the best performance in terms of toxicity and truthfulness.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 31,
+        "metadata": {
+          "section": "Safety",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 1,
+          "char_length": 905,
+          "doc_id": "llama2_paper"
+        },
+        "score": 16.7646,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p69_c0",
+        "text": "A.4.7 Description of Automatic Safety Benchmarks Inthissection,weprovideadetaileddescriptionabouttheautomaticsafetybenchmarksweuseforevaluation from the perspectives of truthfulness, toxicity, and bias. Truthfulness. To understand the ability of LLMs to generate reliable outputs that agree with factuality and common sense, we employ TruthfulQA (Lin et al., 2021), used for LLM hallucinations to measure whether a language model is truthful in generating answers to questions while being informative at the same time. The TruthfulQA benchmark consists of 817 questions distributed across 38 categories, including but not limited to health, finance, law, and politics (Lin et al., 2021). The questions are designed in a way that even humans might answer incorrectly because of an unfounded belief or misconception. Following Lin et al. (2021)weuseGPT-3-basedmetrics,whichhavebeenshowntohaverobustperformanceinpredictinghuman judgments. Specifically, a fine-tuned GPT-3 model¶¶, i.e.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 69,
+        "metadata": {
+          "section": "Appendix",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 0,
+          "char_length": 982,
+          "doc_id": "llama2_paper"
+        },
+        "score": 16.4055,
+        "strategy": "bm25",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p69_c2 | data/llama2_paper.pdf | page 69]\nTo study the sentiment in model generations that may vary with demographic attributes, we choose BOLD (Dhamala et al., 2021), a large-scale bias benchmark that comprises 23,679 English Wikipedia prompts spanning five domains of race, gender, religion, political ideology, and profession, with 43 different subgroups∗∗∗. We conduct a sentiment analysis using the Valence Aware Dictionary and Sentiment Reasoner (VADER)(HuttoandGilbert,2014)toevaluatethesentimentsconveyedbythecombinationofpromptprefix and model generation. VADER produces a sentiment score between -1 and 1. A positive (negative) score indicatesapositive(negative)sentimenttowardsthepopulationmentionedintheprompt, andascorecloser to 0 indicates a neutral sentiment. A.4.8 Automatic Safety Benchmark Evaluation Results Fine-grained Analysis of Toxicity, Truthfulness, and Bias.Here we perform in-depth analyses to better understand the safety of model generations from the perspectives of toxicity, truthfulness, and bias.",
+    "context_ids": [
+      "s3_p69_c2"
+    ],
+    "context_chars": 1034,
+    "elapsed_ms": 0.99,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q19",
+    "split": "test",
+    "question": "Kỹ thuật Context Distillation được ứng dụng trong Safety Fine-Tuning theo cơ chế nào để tăng độ an toàn?",
+    "strategy": "Lexical BM25",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 27,
+        "evidence": "prefixing a safety preprompt to adversarial prompts to generate safer responses"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p23_c2",
+        "text": "This teaches the model to align with our safety guidelines even before RLHF, and thus lays the foundation for high-quality human preference data annotation. 2. Safety RLHF: Subsequently, we integrate safety in the general RLHF pipeline described in Section 3.2.2. This includes training a safety-specific reward model and gathering more challenging adversarial prompts for rejection sampling style fine-tuning and PPO optimization. 3. Safety Context Distillation: Finally, we refine our RLHF pipeline with context distillation (Askell et al., 2021b). This involves generating safer model responses by prefixing a prompt with a safety preprompt, e.g.,“You are a safe and responsible assistant,”and then fine-tuning the model on the safer responses without the preprompt, which essentiallydistillsthe safety preprompt (context) into the model. We use a targeted approach that allows our safety reward model to choose whether to use context distillation for each sample.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 23,
+        "metadata": {
+          "section": "Safety",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "char_length": 967,
+          "doc_id": "llama2_paper"
+        },
+        "score": 15.4917,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p27_c3",
+        "text": "Like supervised safety fine-tuning, safety context distillation provides a quick way to bootstrap the model’s responses on hard adversarial prompts, so that they can then be further improved in RLHF. Specifically, we apply context distillation by prefixing a safety preprompt to adversarial prompts to generate safer responses, and then fine-tune the model on its own safe output given the adversarial prompt without the preprompt. We generate safety preprompts automatically with templates. In particular, we use various adjectivesusuallyassociatedwithsafebehaviorsuchas “responsible,”“respectful’,’ or“wise,”withtheintuition that the model associates them with positive traits that we want to see reflected in safe answers. We show examples of safety preprompts in Appendix Table 39. ContextDistillationwithAnswerTemplates Duringthepromptcollectionphase,wealsoaskedannotators to label prompts according to risk categories, which enables even more targeted preprompts.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 27,
+        "metadata": {
+          "section": "Safety",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 3,
+          "char_length": 969,
+          "doc_id": "llama2_paper"
+        },
+        "score": 13.6172,
+        "strategy": "bm25",
+        "hit": true
+      },
+      {
+        "id": "s3_p28_c2",
+        "text": "We therefore perform safety context distillation only on adversarial prompts. However, we observed that context distillation can sometimes degrade response quality, even when dealing with adversarial prompts. Specifically, if the model responses are already of high quality, the application of context distillation can result in less pertinent replies, as the model tends to overemphasize the preprompt, often resorting to generic concerns excessively (see Appendix Table 40 for an example of vague answers due to context distillation). We thus leverage the safety reward model to decide whether to use safety context distillation – we keep the context-distilled output only on the examples where it gets a better reward model score than the original answer. We notice that this is particularly helpful on prompts that the model is very bad at, but limits the negative impact of context distillation (see Figure 16b).",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 28,
+        "metadata": {
+          "section": "Safety",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "char_length": 917,
+          "doc_id": "llama2_paper"
+        },
+        "score": 13.3307,
+        "strategy": "bm25",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p23_c2 | data/llama2_paper.pdf | page 23]\nThis teaches the model to align with our safety guidelines even before RLHF, and thus lays the foundation for high-quality human preference data annotation. 2. Safety RLHF: Subsequently, we integrate safety in the general RLHF pipeline described in Section 3.2.2. This includes training a safety-specific reward model and gathering more challenging adversarial prompts for rejection sampling style fine-tuning and PPO optimization. 3. Safety Context Distillation: Finally, we refine our RLHF pipeline with context distillation (Askell et al., 2021b). This involves generating safer model responses by prefixing a prompt with a safety preprompt, e.g.,“You are a safe and responsible assistant,”and then fine-tuning the model on the safer responses without the preprompt, which essentiallydistillsthe safety preprompt (context) into the model. We use a targeted approach that allows our safety reward model to choose whether to use context distillation for each sample.",
+    "context_ids": [
+      "s3_p23_c2"
+    ],
+    "context_chars": 1013,
+    "elapsed_ms": 1.15,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "mrr": 0.5,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q20",
+    "split": "test",
+    "question": "Quy mô số lượng chuyên gia tham gia vào chiến dịch Red Teaming kiểm thử an toàn của Llama 2-Chat là khoảng bao nhiêu người?",
+    "strategy": "Lexical BM25",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 28,
+        "evidence": "These teams included over 350 people, including domain experts in cybersecurity, election fraud, social media misinformation, legal, policy, civil rights, ethics, software engineering, machine learning, responsible AI, and creative writing."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p2_c1",
+        "text": ". . . . . . . . . . . . . . . . . . . . . . . . . 23 4.3 Red Teaming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 4.4 Safety Evaluation of Llama 2-Chat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 5 Discussion 32 5.1 Learnings and Observations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 5.2 Limitations and Ethical Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 5.3 Responsible Release Strategy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 6 Related Work 35 7 Conclusion 36 A Appendix 46 A.1 Contributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 A.2 Additional Details for Pretraining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 A.3 Additional Details for Fine-tuning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 2,
+        "metadata": {
+          "section": "Introduction",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 1,
+          "char_length": 998,
+          "doc_id": "llama2_paper"
+        },
+        "score": 13.0065,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p34_c1",
+        "text": "Our experiments indicate that tool usage can spontaneously emerge from alignment in a zero-shot manner. Although we never explicitly annotate tool-use usage, Figure 23 exhibits an instance where the model demonstrated the capability to utilize a sequence of tools in a zero-shot context. In addition, our study extended to evaluating theLlama 2-Chat with access to a calculator. The results from this particular experiment are documented in Table 15. LLM tool use, while exciting, can also cause some safety concerns. We encourage more community research and red teaming in this area. 5.2 Limitations and Ethical Considerations Llama 2-Chat is subject to the same well-recognized limitations of other LLMs, including a cessation of knowledge updates post-pretraining, potential for non-factual generation such as unqualified advice, and a propensity towards hallucinations. Furthermore, our initial version ofLlama 2-Chat predominantly concentrated on English-language data.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "Discussion",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 1,
+          "char_length": 974,
+          "doc_id": "llama2_paper"
+        },
+        "score": 12.0325,
+        "strategy": "bm25",
+        "hit": false
+      },
+      {
+        "id": "s3_p29_c3",
+        "text": "In each case, we took the overall lessons as a guide to help further model safety training, and specifically took data from these exercises for model fine-tuning, model feedback training, and as a signal for other safety model training. Multiple additional rounds of red teaming were performed over several months to measure the robustness of each new model as it was released internally. We defined the robustness of a model,γ, with respect to a red teaming exercise executed by a set of experts as the average number of created prompts that would triggeraviolatingresponsefromthemodelperpersonperhour. Asanexample, onour7Bmodel, wehadan evolution ofγ : 1.8 → 0.45 over several red teaming iterations and model refinements. Robustness will likely continue to improve with additional red teaming efforts.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 29,
+        "metadata": {
+          "section": "Safety",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 3,
+          "char_length": 804,
+          "doc_id": "llama2_paper"
+        },
+        "score": 11.8439,
+        "strategy": "bm25",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p2_c1 | data/llama2_paper.pdf | page 2]\n. . . . . . . . . . . . . . . . . . . . . . . . . 23 4.3 Red Teaming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 4.4 Safety Evaluation of Llama 2-Chat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 5 Discussion 32 5.1 Learnings and Observations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 5.2 Limitations and Ethical Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 5.3 Responsible Release Strategy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 6 Related Work 35 7 Conclusion 36 A Appendix 46 A.1 Contributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 A.2 Additional Details for Pretraining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 A.3 Additional Details for Fine-tuning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+    "context_ids": [
+      "s3_p2_c1"
+    ],
+    "context_chars": 1042,
+    "elapsed_ms": 0.88,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  }
+]

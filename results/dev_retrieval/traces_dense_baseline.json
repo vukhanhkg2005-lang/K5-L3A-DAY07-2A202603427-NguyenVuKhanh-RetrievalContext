@@ -1,0 +1,1307 @@
+[
+  {
+    "query_id": "Q01",
+    "split": "dev",
+    "question": "Các phiên bản mô hình được phát hành chính thức của Llama 2 và Llama 2-Chat gồm những kích thước tham số nào?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 4,
+        "evidence": "We are releasing variants ofLlama 2 with 7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper but are not releasing."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "page_number": 34,
+          "char_length": 837,
+          "doc_id": "llama2_paper",
+          "source": "data/llama2_paper.pdf",
+          "chunk_index": 2,
+          "strategy": "semantic_paragraph",
+          "section": "Discussion"
+        },
+        "score": 0.6944,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p4_c1",
+        "text": "We are releasing variants ofLlama 2 with 7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper but are not releasing.§ 2. Llama 2-Chat, a fine-tuned version ofLlama 2 that is optimized for dialogue use cases. We release variants of this model with 7B, 13B, and 70B parameters as well. We believe that the open release of LLMs, when done safely, will be a net benefit to society. Like all LLMs, Llama 2 is a new technology that carries potential risks with use (Bender et al., 2021b; Weidinger et al., 2021; Solaiman et al., 2023). Testing conducted to date has been in English and has not — and could not — cover all scenarios. Therefore, before deploying any applications ofLlama 2-Chat, developers should perform safety testing and tuning tailored to their specific applications of the model. We provide a responsible use guide¶ and code examples‖ to facilitate the safe deployment ofLlama 2 and Llama 2-Chat.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 4,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper",
+          "section": "Introduction",
+          "chunk_index": 1,
+          "page_number": 4,
+          "char_length": 954,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6607,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "s3_p77_c1",
+        "text": "License A custom commercial license is available at: ai.meta.com/resources/ models-and-libraries/llama-downloads/ Where to send comments Instructions on how to provide feedback or comments on the model can be found in the model README, or by opening an issue in the GitHub repository (https://github.com/facebookresearch/llama/). Intended Use Intended Use Cases Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. Out-of-Scope Uses Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Llama 2. Hardware and Software(Section 2.2) Training Factors We used custom training libraries, Meta’s Research Super Cluster, and production clusters for pretraining.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 77,
+        "metadata": {
+          "char_length": 987,
+          "source": "data/llama2_paper.pdf",
+          "chunk_index": 1,
+          "strategy": "semantic_paragraph",
+          "page_number": 77,
+          "section": "Appendix",
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6539,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p34_c2 | data/llama2_paper.pdf | page 34]\nWhile our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+    "context_ids": [
+      "s3_p34_c2"
+    ],
+    "context_chars": 883,
+    "elapsed_ms": 154.7,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "mrr": 0.5,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q02",
+    "split": "dev",
+    "question": "Mô hình Llama 2 được tiền huấn luyện trên tổng lượng dữ liệu là bao nhiêu token?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "We trained on 2 trillion tokens of data as this provides a good performance–cost trade-off"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "char_length": 837,
+          "section": "Discussion",
+          "chunk_index": 2,
+          "page_number": 34,
+          "doc_id": "llama2_paper",
+          "strategy": "semantic_paragraph"
+        },
+        "score": 0.636,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p77_c1",
+        "text": "License A custom commercial license is available at: ai.meta.com/resources/ models-and-libraries/llama-downloads/ Where to send comments Instructions on how to provide feedback or comments on the model can be found in the model README, or by opening an issue in the GitHub repository (https://github.com/facebookresearch/llama/). Intended Use Intended Use Cases Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. Out-of-Scope Uses Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Llama 2. Hardware and Software(Section 2.2) Training Factors We used custom training libraries, Meta’s Research Super Cluster, and production clusters for pretraining.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 77,
+        "metadata": {
+          "char_length": 987,
+          "strategy": "semantic_paragraph",
+          "page_number": 77,
+          "source": "data/llama2_paper.pdf",
+          "chunk_index": 1,
+          "section": "Appendix",
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6285,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p37_c3",
+        "text": "So, Daniel Sohn, Simon Tokumine, Dasha Valter, Vijay Vasudevan, Kiran Vodrahalli, Xuezhi Wang, Pidong Wang, Zirui Wang, Tao Wang, John Wieting, Yuhuai Wu, Kelvin Xu, Yunhan Xu, Linting Xue, Pengcheng Yin, Jiahui Yu, Qiao Zhang, Steven Zheng, Ce Zheng, Weikang Zhou, Denny Zhou, Slav Petrov, and Yonghui Wu. Palm 2 technical report, 2023. Amanda Askell, Yuntao Bai, Anna Chen, Dawn Drain, Deep Ganguli, Tom Henighan, Andy Jones, Nicholas Joseph, Ben Mann, Nova DasSarma, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Jackson Kernion, Kamal Ndousse, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, and Chris Olah. A general language assistant as a laboratory for alignment.arXiv preprint arXiv:2112.00861, 2021a. Amanda Askell, Yuntao Bai, Anna Chen, Dawn Drain, Deep Ganguli, Tom Henighan, Andy Jones, Nicholas Joseph, Ben Mann, Nova DasSarma, et al. A general language assistant as a laboratory for alignment.arXiv preprint arXiv:2112.00861, 2021b.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 37,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper",
+          "chunk_index": 3,
+          "section": "References",
+          "source": "data/llama2_paper.pdf",
+          "char_length": 977,
+          "page_number": 37
+        },
+        "score": 0.6208,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p34_c2 | data/llama2_paper.pdf | page 34]\nWhile our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+    "context_ids": [
+      "s3_p34_c2"
+    ],
+    "context_chars": 883,
+    "elapsed_ms": 25.08,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q03",
+    "split": "dev",
+    "question": "Độ dài ngữ cảnh (context length) của Llama 2 là bao nhiêu và thay đổi thế nào so với Llama 1?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "trained on 40% more total tokens,doubledthecontextlength,andusedgrouped-queryattention(GQA)"
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p77_c1",
+        "text": "License A custom commercial license is available at: ai.meta.com/resources/ models-and-libraries/llama-downloads/ Where to send comments Instructions on how to provide feedback or comments on the model can be found in the model README, or by opening an issue in the GitHub repository (https://github.com/facebookresearch/llama/). Intended Use Intended Use Cases Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. Out-of-Scope Uses Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Llama 2. Hardware and Software(Section 2.2) Training Factors We used custom training libraries, Meta’s Research Super Cluster, and production clusters for pretraining.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 77,
+        "metadata": {
+          "section": "Appendix",
+          "source": "data/llama2_paper.pdf",
+          "chunk_index": 1,
+          "page_number": 77,
+          "char_length": 987,
+          "doc_id": "llama2_paper",
+          "strategy": "semantic_paragraph"
+        },
+        "score": 0.6988,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "char_length": 837,
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "page_number": 34,
+          "doc_id": "llama2_paper",
+          "section": "Discussion",
+          "chunk_index": 2
+        },
+        "score": 0.6832,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p77_c3",
+        "text": "Testing conducted to date has been in English, and has not covered, nor could it cover all scenarios. For these reasons, as with all LLMs, Llama 2’s potential outputs cannot be predicted in advance, and the model may in some instances produce inaccurate or objectionable responses to user prompts. Therefore, before deploying any applications of Llama 2, developers should perform safety testing and tuning tailored to their specific applications of the model. Please see the Responsible Use Guide available available at https://ai.meta.com/llama/responsible-user-guide Table 52: Model card forLlama 2.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 77,
+        "metadata": {
+          "doc_id": "llama2_paper",
+          "source": "data/llama2_paper.pdf",
+          "section": "Appendix",
+          "char_length": 602,
+          "chunk_index": 3,
+          "page_number": 77,
+          "strategy": "semantic_paragraph"
+        },
+        "score": 0.6637,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p77_c1 | data/llama2_paper.pdf | page 77]\nLicense A custom commercial license is available at: ai.meta.com/resources/ models-and-libraries/llama-downloads/ Where to send comments Instructions on how to provide feedback or comments on the model can be found in the model README, or by opening an issue in the GitHub repository (https://github.com/facebookresearch/llama/). Intended Use Intended Use Cases Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. Out-of-Scope Uses Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Llama 2. Hardware and Software(Section 2.2) Training Factors We used custom training libraries, Meta’s Research Super Cluster, and production clusters for pretraining.",
+    "context_ids": [
+      "s3_p77_c1"
+    ],
+    "context_chars": 1033,
+    "elapsed_ms": 18.84,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q04",
+    "split": "dev",
+    "question": "Kỹ thuật Grouped-Query Attention (GQA) được sử dụng trong các mô hình kích thước nào của Llama 2 và nhằm mục đích gì?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p48_c0",
+        "text": "BoolQ PIQA SIQA Hella-Swag ARC-e ARC-c NQ TQA MMLU GSM8K Human-Eval MHA 71.0 79.3 48.2 75.1 71.2 43.0 12.4 44.7 28.0 4.9 7.9 MQA 70.6 79.0 47.9 74.5 71.6 41.9 14.5 42.8 26.5 4.8 7.3 GQA 69.4 78.8 48.6 75.4 72.1 42.5 14.0 46.2 26.9 5.3 7.9 Table 18: Attention architecture ablations.We report 0-shot results for all tasks except MMLU(5-shot) and GSM8K(8-shot). For GSM8K and Human-Eval we report maj@1 and pass@1 results. For NQ and TriviaQA we report EM. For all other tasks we report accuracy. Figure 24: Multi-query variants enable higher throughput with larger batch sizes, and show similar latency on smaller batches.Output length is fixed at 128 tokens. The first data point corresponds to batch size 1, and then we double it until the model runs out of memory. The MHA variant triggers an out-ofmemory error at a batch size of 1024 for a context of 256 tokens and at a batch size of 128 for 2k context, whereas MQA and GQA have successful runs in those settings.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 48,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "char_length": 968,
+          "doc_id": "llama2_paper",
+          "chunk_index": 0,
+          "section": "Appendix",
+          "strategy": "semantic_paragraph",
+          "page_number": 48
+        },
+        "score": 0.6872,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p6_c0",
+        "text": "Training Data Params Context Length GQA Tokens LR Llama 1 See Touvron et al. (2023) 7B 2k ✗ 1.0T 3.0 × 10−4 13B 2k ✗ 1.0T 3.0 × 10−4 33B 2k ✗ 1.4T 1.5 × 10−4 65B 2k ✗ 1.4T 1.5 × 10−4 Llama 2 A new mix of publicly available online data 7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4 Table 1:Llama 2 family of models.Token counts refer to pretraining data only. All models are trained with a global batch-size of 4M tokens. Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability. 0 250 500 750 1000 1250 1500 1750 2000 Processed Tokens (Billions) 1.4 1.5 1.6 1.7 1.8 1.9 2.0 2.1 2.2Train PPL Llama-2 7B 13B 34B 70B Figure 5: Training Loss forLlama 2 models. We compare the training loss of theLlama 2 family of models. We observe that after pretraining on 2T Tokens, the models still did not show any sign of saturation. Tokenizer.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 6,
+        "metadata": {
+          "chunk_index": 0,
+          "doc_id": "llama2_paper",
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "char_length": 925,
+          "section": "Pretraining",
+          "page_number": 6
+        },
+        "score": 0.6819,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "s3_p47_c2",
+        "text": "Eithertheoriginalmulti-queryformatwithasingleKVprojection(MQA, Shazeer, 2019) or a grouped-query attention variant with 8 KV projections (GQA, Ainslie et al., 2023) can be used. In Table 18, we compare MQA and GQA variants with an MHA baseline. We train all models with 150B tokens while keeping a fixed 30B model size. To keep a similar overall parameter count across GQA and MQA, we increase the dimension of the feed-forward layers to compensate for the reduction in the attention layers. For the MQA variant, we increase the FFN dimension by a factor of1.33, and for the GQA variant, we increase it by a factor of1.3. From the results, we observe that the GQA variant performs comparably to the MHA baseline on most evaluation tasks and is better than the MQA variant on average. To optimize for latency, we host our largest models using 8 A100s in a single node with tensor parallelism (Shoeybi et al., 2019).",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 47,
+        "metadata": {
+          "doc_id": "llama2_paper",
+          "char_length": 914,
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "section": "Appendix",
+          "page_number": 47,
+          "chunk_index": 2
+        },
+        "score": 0.6784,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p48_c0 | data/llama2_paper.pdf | page 48]\nBoolQ PIQA SIQA Hella-Swag ARC-e ARC-c NQ TQA MMLU GSM8K Human-Eval MHA 71.0 79.3 48.2 75.1 71.2 43.0 12.4 44.7 28.0 4.9 7.9 MQA 70.6 79.0 47.9 74.5 71.6 41.9 14.5 42.8 26.5 4.8 7.3 GQA 69.4 78.8 48.6 75.4 72.1 42.5 14.0 46.2 26.9 5.3 7.9 Table 18: Attention architecture ablations.We report 0-shot results for all tasks except MMLU(5-shot) and GSM8K(8-shot). For GSM8K and Human-Eval we report maj@1 and pass@1 results. For NQ and TriviaQA we report EM. For all other tasks we report accuracy. Figure 24: Multi-query variants enable higher throughput with larger batch sizes, and show similar latency on smaller batches.Output length is fixed at 128 tokens. The first data point corresponds to batch size 1, and then we double it until the model runs out of memory. The MHA variant triggers an out-ofmemory error at a batch size of 1024 for a context of 256 tokens and at a batch size of 128 for 2k context, whereas MQA and GQA have successful runs in those settings.",
+    "context_ids": [
+      "s3_p48_c0"
+    ],
+    "context_chars": 1014,
+    "elapsed_ms": 21.44,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "mrr": 0.5,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q05",
+    "split": "dev",
+    "question": "Tokenizer của Llama 2 sử dụng thuật toán nào và kích thước từ vựng (vocabulary size) là bao nhiêu?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "The total vocabulary size is 32k tokens."
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "SentencePiece (Kudo and Richardson, 2018)"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p39_c0",
+        "text": "Adam Roberts, Denny Zhou, Quoc V. Le, and Jason Wei. Scaling instruction-finetuned language models. arXiv preprint arXiv:2210.11416, 2022. ChristopherClark,KentonLee,Ming-WeiChang,TomKwiatkowski,MichaelCollins,andKristinaToutanova. Boolq: Exploring the surprising difficulty of natural yes/no questions.arXiv preprint arXiv:1905.10044, 2019. ElizabethClark,TalAugust,SofiaSerrano,NikitaHaduong,SuchinGururangan,andNoahA.Smith.Allthat’s ‘human’isnotgold: Evaluatinghumanevaluationofgeneratedtext. In Proceedingsofthe59thAnnualMeeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 7282–7296, Online, August 2021. Association for Computational Linguistics. doi: 10.18653/v1/2021.acl-long.565. URLhttps://aclanthology.org/2021.acl-long.565. Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa Schoenick, and Oyvind Tafjord. Think you have solved question answering?",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 39,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "chunk_index": 0,
+          "section": "References",
+          "page_number": 39,
+          "source": "data/llama2_paper.pdf",
+          "doc_id": "llama2_paper",
+          "char_length": 998
+        },
+        "score": 0.6913,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "Discussion",
+          "char_length": 837,
+          "source": "data/llama2_paper.pdf",
+          "page_number": 34,
+          "chunk_index": 2,
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6848,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p41_c1",
+        "text": "arXiv preprint arXiv:2302.08582, 2023. Taku Kudo and John Richardson. Sentencepiece: A simple and language independent subword tokenizer and detokenizer for neural text processing, 2018. SachinKumar,VidhishaBalachandran,LucilleNjoo,AntoniosAnastasopoulos,andYuliaTsvetkov. Language generation models can cause harm: So what can we do about it? an actionable survey.arXiv preprint arXiv:2210.07700, 2022. Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Jacob Devlin, Kenton Lee, et al. Natural questions: a benchmark for question answering research.Transactions of the Association for Computational Linguistics, 7:453–466, 2019. Nathan Lambert, Lewis Tunstall, Nazneen Rajani, and Tristan Thrush. Huggingface h4 stack exchange preference dataset. 2023. URL https://huggingface.co/datasets/HuggingFaceH4/ stack-exchange-preferences.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 41,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "char_length": 919,
+          "page_number": 41,
+          "strategy": "semantic_paragraph",
+          "section": "References",
+          "chunk_index": 1,
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6762,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p39_c0 | data/llama2_paper.pdf | page 39]\nAdam Roberts, Denny Zhou, Quoc V. Le, and Jason Wei. Scaling instruction-finetuned language models. arXiv preprint arXiv:2210.11416, 2022. ChristopherClark,KentonLee,Ming-WeiChang,TomKwiatkowski,MichaelCollins,andKristinaToutanova. Boolq: Exploring the surprising difficulty of natural yes/no questions.arXiv preprint arXiv:1905.10044, 2019. ElizabethClark,TalAugust,SofiaSerrano,NikitaHaduong,SuchinGururangan,andNoahA.Smith.Allthat’s ‘human’isnotgold: Evaluatinghumanevaluationofgeneratedtext. In Proceedingsofthe59thAnnualMeeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 7282–7296, Online, August 2021. Association for Computational Linguistics. doi: 10.18653/v1/2021.acl-long.565. URLhttps://aclanthology.org/2021.acl-long.565. Peter Clark, Isaac Cowhey, Oren Etzioni, Tushar Khot, Ashish Sabharwal, Carissa Schoenick, and Oyvind Tafjord. Think you have solved question answering?",
+    "context_ids": [
+      "s3_p39_c0"
+    ],
+    "context_chars": 1044,
+    "elapsed_ms": 20.11,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q06",
+    "split": "dev",
+    "question": "Trong phần tiền huấn luyện, những siêu tham số nào được thiết lập cho optimizer AdamW?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "AdamW optimizer (Loshchilov and Hutter, 2017), withβ1 = 0.9, β2 = 0.95,eps = 10−5."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p41_c3",
+        "text": "The flan collection: Designing data and methods for effective instruction tuning. arXiv preprint arXiv:2301.13688, 2023. Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization.arXiv preprint arXiv:1711.05101, 2017. Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et al. Self-refine: Iterative refinement with self-feedback.arXiv preprint arXiv:2303.17651, 2023. Grégoire Mialon, Roberto Dessì, Maria Lomeli, Christoforos Nalmpantis, Ram Pasunuru, Roberta Raileanu, Baptiste Rozière, Timo Schick, Jane Dwivedi-Yu, Asli Celikyilmaz, et al. Augmented language models: a survey.arXiv preprint arXiv:2302.07842, 2023. Todor Mihaylov, Peter Clark, Tushar Khot, and Ashish Sabharwal. Can a suit of armor conduct electricity? a new dataset for open book question answering.arXiv preprint arXiv:1809.02789, 2018.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 41,
+        "metadata": {
+          "page_number": 41,
+          "section": "References",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 3,
+          "doc_id": "llama2_paper",
+          "char_length": 914,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6513,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p38_c5",
+        "text": "Dai, Thanumalayan Sankaranarayana Pillai, Marie Pellat, Aitor Lewkowycz, EricaMoreira,RewonChild, OleksandrPolozov, KatherineLee,ZongweiZhou, XuezhiWang, Brennan Saeta, Mark Diaz, Orhan Firat, Michele Catasta, Jason Wei, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, and Noah Fiedel. Palm: Scaling language modeling with pathways, 2022. Paul F Christiano, Jan Leike, Tom Brown, Miljan Martic, Shane Legg, and Dario Amodei. Deep reinforcement learning from human preferences.Advances in neural information processing systems, 30, 2017. Hyung Won Chung, Le Hou, S. Longpre, Barret Zoph, Yi Tay, William Fedus, Eric Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, Albert Webson, Shixiang Shane Gu, Zhuyun Dai, Mirac Suzgun, Xinyun Chen,AakankshaChowdhery,DashaValter,SharanNarang,GauravMishra,AdamsWeiYu,VincentZhao, Yanping Huang, Andrew M. Dai, Hongkun Yu, Slav Petrov, Ed Huai hsin Chi, Jeff Dean, Jacob Devlin,",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 38,
+        "metadata": {
+          "char_length": 931,
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "doc_id": "llama2_paper",
+          "page_number": 38,
+          "section": "References",
+          "chunk_index": 5
+        },
+        "score": 0.6444,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p15_c2",
+        "text": "Given a finite compute budget, it is therefore necessary to re-adjust the temperature progressively. Note that this temperature rescaling happens for a constant number of steps for each model, and always starting from the base model on each new RLHF version. PPO. WefurthertrainourlanguagemodelfollowingtheRLschemeofStiennonetal.(2020),whichusesthe reward model as an estimate for the true reward function (human preference) and the pretrained language model as the policy to optimize. During this phase, we seek to optimize the following objective: arg max π Ep∼D,g∼π[R(g | p)] (3) We iteratively improve the policy by sampling promptsp from our datasetD and generationsg from the policy π and use the PPO algorithm and loss function to achieve this objective. The final reward function we use during optimization, R(g | p) = ˜Rc(g | p) − βDKL (πθ(g | p) ∥ π0(g | p)) (4) contains a penalty term for diverging from the original policyπ0.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 15,
+        "metadata": {
+          "section": "Fine-tuning",
+          "chunk_index": 2,
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "char_length": 938,
+          "doc_id": "llama2_paper",
+          "page_number": 15
+        },
+        "score": 0.6421,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p41_c3 | data/llama2_paper.pdf | page 41]\nThe flan collection: Designing data and methods for effective instruction tuning. arXiv preprint arXiv:2301.13688, 2023. Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization.arXiv preprint arXiv:1711.05101, 2017. Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et al. Self-refine: Iterative refinement with self-feedback.arXiv preprint arXiv:2303.17651, 2023. Grégoire Mialon, Roberto Dessì, Maria Lomeli, Christoforos Nalmpantis, Ram Pasunuru, Roberta Raileanu, Baptiste Rozière, Timo Schick, Jane Dwivedi-Yu, Asli Celikyilmaz, et al. Augmented language models: a survey.arXiv preprint arXiv:2302.07842, 2023. Todor Mihaylov, Peter Clark, Tushar Khot, and Ashish Sabharwal. Can a suit of armor conduct electricity? a new dataset for open book question answering.arXiv preprint arXiv:1809.02789, 2018.",
+    "context_ids": [
+      "s3_p41_c3"
+    ],
+    "context_chars": 960,
+    "elapsed_ms": 22.55,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q07",
+    "split": "dev",
+    "question": "Tổng lượng khí thải carbon footprint phát sinh từ quá trình pretraining Llama 2 ước tính là bao nhiêu tấn CO2eq?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 7,
+        "evidence": "We estimate the total emissions for training to be539 tCO2eq, of which 100% were directly offset by Meta’s sustainability program."
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 7,
+        "evidence": "Total 3311616 539.00 Table 2:CO2 emissions during pretraining."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p7_c0",
+        "text": "Time (GPU hours) Power Consumption (W) Carbon Emitted (tCO2eq) Llama 2 7B 184320 400 31.22 13B 368640 400 62.44 34B 1038336 350 153.90 70B 1720320 400 291.42 Total 3311616 539.00 Table 2:CO2 emissions during pretraining.Time: total GPU time required for training each model. Power Consumption: peak power capacity per GPU device for the GPUs used adjusted for power usage efficiency. 100%oftheemissionsaredirectlyoffsetbyMeta’ssustainabilityprogram,andbecauseweareopenlyreleasing these models, the pretraining costs do not need to be incurred by others. can scale almost as well as expensive Infiniband up to 2000 GPUs, which makes pretraining even more democratizable. Carbon Footprint of Pretraining. Following preceding research (Bender et al., 2021a; Patterson et al., 2021; Wu et al., 2022; Dodge et al., 2022) and using power consumption estimates of GPU devices and carbon efficiency, we aim to calculate the carbon emissions resulting from the pretraining ofLlama 2 models.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 7,
+        "metadata": {
+          "char_length": 981,
+          "source": "data/llama2_paper.pdf",
+          "strategy": "semantic_paragraph",
+          "page_number": 7,
+          "doc_id": "llama2_paper",
+          "section": "Pretraining",
+          "chunk_index": 0
+        },
+        "score": 0.7262,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "s3_p77_c2",
+        "text": "Fine-tuning, annotation, and evaluation were also performed on third-party cloud compute. Carbon Footprint Pretraining utilized a cumulative 3.3M GPU hours of computation on hardware of type A100-80GB (TDP of 350-400W). Estimated total emissions were 539 tCO2eq, 100% of which were offset by Meta’s sustainability program. Training Data(Sections 2.1 and 3) Overview Llama 2 was pretrained on 2 trillion tokens of data from publicly available sources. The fine-tuning data includes publicly available instruction datasets, as wellasoveronemillionnewhuman-annotatedexamples. Neitherthepretraining nor the fine-tuning datasets include Meta user data. Data Freshness The pretraining data has a cutoff of September 2022, but some tuning data is more recent, up to July 2023. Evaluation Results See evaluations for pretraining (Section 2); fine-tuning (Section 3); and safety (Section 4). Ethical Considerations and Limitations(Section 5.2) Llama 2 is a new technology that carries risks with use.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 77,
+        "metadata": {
+          "page_number": 77,
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "doc_id": "llama2_paper",
+          "char_length": 991,
+          "section": "Appendix",
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6923,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p7_c1",
+        "text": "The actual power usage of a GPU is dependent on its utilization and is likely to vary from the Thermal Design Power (TDP) that we employ as an estimation for GPU power. It is important to note that our calculations do not account for further power demands, such as those from interconnect or non-GPU server power consumption,norfromdatacentercoolingsystems. Additionally,thecarbonoutputrelatedtotheproduction of AI hardware, like GPUs, could add to the overall carbon footprint as suggested by Gupta et al. (2022b,a). Table 2 summarizes the carbon emission for pretraining theLlama 2 family of models. A cumulative of 3.3M GPU hours of computation was performed on hardware of type A100-80GB (TDP of 400W or 350W). We estimate the total emissions for training to be539 tCO2eq, of which 100% were directly offset by Meta’s sustainability program.∗∗ Our open release strategy also means that these pretraining costs will not need to be incurred by other companies, saving more global resources.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 7,
+        "metadata": {
+          "doc_id": "llama2_paper",
+          "chunk_index": 1,
+          "section": "Pretraining",
+          "page_number": 7,
+          "char_length": 992,
+          "source": "data/llama2_paper.pdf",
+          "strategy": "semantic_paragraph"
+        },
+        "score": 0.6869,
+        "strategy": "dense",
+        "hit": true
+      }
+    ],
+    "context": "[s3_p7_c0 | data/llama2_paper.pdf | page 7]\nTime (GPU hours) Power Consumption (W) Carbon Emitted (tCO2eq) Llama 2 7B 184320 400 31.22 13B 368640 400 62.44 34B 1038336 350 153.90 70B 1720320 400 291.42 Total 3311616 539.00 Table 2:CO2 emissions during pretraining.Time: total GPU time required for training each model. Power Consumption: peak power capacity per GPU device for the GPUs used adjusted for power usage efficiency. 100%oftheemissionsaredirectlyoffsetbyMeta’ssustainabilityprogram,andbecauseweareopenlyreleasing these models, the pretraining costs do not need to be incurred by others. can scale almost as well as expensive Infiniband up to 2000 GPUs, which makes pretraining even more democratizable. Carbon Footprint of Pretraining. Following preceding research (Bender et al., 2021a; Patterson et al., 2021; Wu et al., 2022; Dodge et al., 2022) and using power consumption estimates of GPU devices and carbon efficiency, we aim to calculate the carbon emissions resulting from the pretraining ofLlama 2 models.",
+    "context_ids": [
+      "s3_p7_c0"
+    ],
+    "context_chars": 1025,
+    "elapsed_ms": 67.68,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "mrr": 1.0,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q08",
+    "split": "dev",
+    "question": "Trong giai đoạn Supervised Fine-Tuning (SFT), nhóm tác giả đã thu thập bao nhiêu mẫu chú thích chất lượng cao trước khi dừng lại?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 9,
+        "evidence": "We stopped annotating SFT after collecting a total of 27,540 annotations."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p2_c0",
+        "text": "Contents 1 Introduction 3 2 Pretraining 5 2.1 Pretraining Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.2 Training Details . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.3 Llama 2 Pretrained Model Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 3 Fine-tuning 8 3.1 Supervised Fine-Tuning (SFT) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 3.2 Reinforcement Learning with Human Feedback (RLHF) . . . . . . . . . . . . . . . . . . . . . 9 3.3 System Message for Multi-Turn Consistency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 3.4 RLHF Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 4 Safety 20 4.1 Safety in Pretraining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 4.2 Safety Fine-Tuning . . . . . . . . . . . . . . . . . .",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 2,
+        "metadata": {
+          "char_length": 999,
+          "doc_id": "llama2_paper",
+          "chunk_index": 0,
+          "page_number": 2,
+          "section": "Introduction",
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.7206,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p41_c3",
+        "text": "The flan collection: Designing data and methods for effective instruction tuning. arXiv preprint arXiv:2301.13688, 2023. Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization.arXiv preprint arXiv:1711.05101, 2017. Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et al. Self-refine: Iterative refinement with self-feedback.arXiv preprint arXiv:2303.17651, 2023. Grégoire Mialon, Roberto Dessì, Maria Lomeli, Christoforos Nalmpantis, Ram Pasunuru, Roberta Raileanu, Baptiste Rozière, Timo Schick, Jane Dwivedi-Yu, Asli Celikyilmaz, et al. Augmented language models: a survey.arXiv preprint arXiv:2302.07842, 2023. Todor Mihaylov, Peter Clark, Tushar Khot, and Ashish Sabharwal. Can a suit of armor conduct electricity? a new dataset for open book question answering.arXiv preprint arXiv:1809.02789, 2018.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 41,
+        "metadata": {
+          "char_length": 914,
+          "strategy": "semantic_paragraph",
+          "chunk_index": 3,
+          "section": "References",
+          "page_number": 41,
+          "doc_id": "llama2_paper",
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6975,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p9_c3",
+        "text": "Surprisingly, we found that the outputs sampled from the resulting SFT model were often competitive with SFT data handwritten by human annotators, suggesting that we could reprioritize and devote more annotation effort to preference-based annotation for RLHF. Fine-Tuning Details. For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens. For the fine-tuning process, each sample consists of a prompt and an answer. To ensure the model sequence length is properly filled, we concatenate all the prompts and answers from the training set. A special token is utilized to separate the prompt and answer segments. We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens. Finally, we fine-tune the model for 2 epochs.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 9,
+        "metadata": {
+          "doc_id": "llama2_paper",
+          "section": "Fine-tuning",
+          "char_length": 936,
+          "page_number": 9,
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "chunk_index": 3
+        },
+        "score": 0.6964,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p2_c0 | data/llama2_paper.pdf | page 2]\nContents 1 Introduction 3 2 Pretraining 5 2.1 Pretraining Data . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.2 Training Details . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5 2.3 Llama 2 Pretrained Model Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7 3 Fine-tuning 8 3.1 Supervised Fine-Tuning (SFT) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9 3.2 Reinforcement Learning with Human Feedback (RLHF) . . . . . . . . . . . . . . . . . . . . . 9 3.3 System Message for Multi-Turn Consistency . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16 3.4 RLHF Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17 4 Safety 20 4.1 Safety in Pretraining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20 4.2 Safety Fine-Tuning . . . . . . . . . . . . . . . . . .",
+    "context_ids": [
+      "s3_p2_c0"
+    ],
+    "context_chars": 1043,
+    "elapsed_ms": 41.88,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q09",
+    "split": "dev",
+    "question": "Trong giai đoạn Reward Modeling của RLHF, hai mô hình phần thưởng riêng biệt được huấn luyện nhằm tối ưu cho hai khía cạnh nào?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 10,
+        "evidence": "To address this, we train two separate reward models, one optimized for helpfulness (referred to asHelpfulness RM) and another for safety (Safety RM)."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p15_c2",
+        "text": "Given a finite compute budget, it is therefore necessary to re-adjust the temperature progressively. Note that this temperature rescaling happens for a constant number of steps for each model, and always starting from the base model on each new RLHF version. PPO. WefurthertrainourlanguagemodelfollowingtheRLschemeofStiennonetal.(2020),whichusesthe reward model as an estimate for the true reward function (human preference) and the pretrained language model as the policy to optimize. During this phase, we seek to optimize the following objective: arg max π Ep∼D,g∼π[R(g | p)] (3) We iteratively improve the policy by sampling promptsp from our datasetD and generationsg from the policy π and use the PPO algorithm and loss function to achieve this objective. The final reward function we use during optimization, R(g | p) = ˜Rc(g | p) − βDKL (πθ(g | p) ∥ π0(g | p)) (4) contains a penalty term for diverging from the original policyπ0.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 15,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "section": "Fine-tuning",
+          "page_number": 15,
+          "char_length": 938,
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.7051,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p38_c5",
+        "text": "Dai, Thanumalayan Sankaranarayana Pillai, Marie Pellat, Aitor Lewkowycz, EricaMoreira,RewonChild, OleksandrPolozov, KatherineLee,ZongweiZhou, XuezhiWang, Brennan Saeta, Mark Diaz, Orhan Firat, Michele Catasta, Jason Wei, Kathy Meier-Hellstern, Douglas Eck, Jeff Dean, Slav Petrov, and Noah Fiedel. Palm: Scaling language modeling with pathways, 2022. Paul F Christiano, Jan Leike, Tom Brown, Miljan Martic, Shane Legg, and Dario Amodei. Deep reinforcement learning from human preferences.Advances in neural information processing systems, 30, 2017. Hyung Won Chung, Le Hou, S. Longpre, Barret Zoph, Yi Tay, William Fedus, Eric Li, Xuezhi Wang, Mostafa Dehghani, Siddhartha Brahma, Albert Webson, Shixiang Shane Gu, Zhuyun Dai, Mirac Suzgun, Xinyun Chen,AakankshaChowdhery,DashaValter,SharanNarang,GauravMishra,AdamsWeiYu,VincentZhao, Yanping Huang, Andrew M. Dai, Hongkun Yu, Slav Petrov, Ed Huai hsin Chi, Jeff Dean, Jacob Devlin,",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 38,
+        "metadata": {
+          "page_number": 38,
+          "doc_id": "llama2_paper",
+          "source": "data/llama2_paper.pdf",
+          "section": "References",
+          "char_length": 931,
+          "chunk_index": 5,
+          "strategy": "semantic_paragraph"
+        },
+        "score": 0.7035,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p52_c2",
+        "text": "The above observation suggests investment in reward calibration for future work as reinforcement learning algorithms, such as PPO, can be sensitive to reward distribution change. A.3.4 Ablation on Ranking Loss with Safety Auxiliary Loss for Reward Modeling We ablated the impact of the safety auxiliary loss with results on the Meta Safety test set shown in Table 29. As expected, The customized loss improves the recall of unsafe responses when we use a reward score of 0.5 as the threshold (negative before Sigmoid) and thus offers a better safety reward signal for RLHF. Teaching themodeltodiscriminatebetweensafeandunsafemodelgenerationsalsoimprovesmodelaccuracyonthree subcategories.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 52,
+        "metadata": {
+          "char_length": 688,
+          "source": "data/llama2_paper.pdf",
+          "page_number": 52,
+          "section": "Appendix",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6924,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p15_c2 | data/llama2_paper.pdf | page 15]\nGiven a finite compute budget, it is therefore necessary to re-adjust the temperature progressively. Note that this temperature rescaling happens for a constant number of steps for each model, and always starting from the base model on each new RLHF version. PPO. WefurthertrainourlanguagemodelfollowingtheRLschemeofStiennonetal.(2020),whichusesthe reward model as an estimate for the true reward function (human preference) and the pretrained language model as the policy to optimize. During this phase, we seek to optimize the following objective: arg max π Ep∼D,g∼π[R(g | p)] (3) We iteratively improve the policy by sampling promptsp from our datasetD and generationsg from the policy π and use the PPO algorithm and loss function to achieve this objective. The final reward function we use during optimization, R(g | p) = ˜Rc(g | p) − βDKL (πθ(g | p) ∥ π0(g | p)) (4) contains a penalty term for diverging from the original policyπ0.",
+    "context_ids": [
+      "s3_p15_c2"
+    ],
+    "context_chars": 984,
+    "elapsed_ms": 34.18,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q10",
+    "split": "dev",
+    "question": "Hai thuật toán học tăng cường chính nào được kết hợp áp dụng qua các vòng lặp RLHF của Llama 2-Chat?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 13,
+        "evidence": "We explored RLHF fine-tuning with two main algorithms: • Proximal Policy Optimization (PPO)(Schulman et al., 2017), the standard in RLHF literature. • RejectionSamplingfine-tuning"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "char_length": 837,
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "doc_id": "llama2_paper",
+          "page_number": 34,
+          "section": "Discussion"
+        },
+        "score": 0.6804,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p37_c3",
+        "text": "So, Daniel Sohn, Simon Tokumine, Dasha Valter, Vijay Vasudevan, Kiran Vodrahalli, Xuezhi Wang, Pidong Wang, Zirui Wang, Tao Wang, John Wieting, Yuhuai Wu, Kelvin Xu, Yunhan Xu, Linting Xue, Pengcheng Yin, Jiahui Yu, Qiao Zhang, Steven Zheng, Ce Zheng, Weikang Zhou, Denny Zhou, Slav Petrov, and Yonghui Wu. Palm 2 technical report, 2023. Amanda Askell, Yuntao Bai, Anna Chen, Dawn Drain, Deep Ganguli, Tom Henighan, Andy Jones, Nicholas Joseph, Ben Mann, Nova DasSarma, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Jackson Kernion, Kamal Ndousse, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, and Chris Olah. A general language assistant as a laboratory for alignment.arXiv preprint arXiv:2112.00861, 2021a. Amanda Askell, Yuntao Bai, Anna Chen, Dawn Drain, Deep Ganguli, Tom Henighan, Andy Jones, Nicholas Joseph, Ben Mann, Nova DasSarma, et al. A general language assistant as a laboratory for alignment.arXiv preprint arXiv:2112.00861, 2021b.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 37,
+        "metadata": {
+          "char_length": 977,
+          "chunk_index": 3,
+          "source": "data/llama2_paper.pdf",
+          "page_number": 37,
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper",
+          "section": "References"
+        },
+        "score": 0.6483,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p4_c1",
+        "text": "We are releasing variants ofLlama 2 with 7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper but are not releasing.§ 2. Llama 2-Chat, a fine-tuned version ofLlama 2 that is optimized for dialogue use cases. We release variants of this model with 7B, 13B, and 70B parameters as well. We believe that the open release of LLMs, when done safely, will be a net benefit to society. Like all LLMs, Llama 2 is a new technology that carries potential risks with use (Bender et al., 2021b; Weidinger et al., 2021; Solaiman et al., 2023). Testing conducted to date has been in English and has not — and could not — cover all scenarios. Therefore, before deploying any applications ofLlama 2-Chat, developers should perform safety testing and tuning tailored to their specific applications of the model. We provide a responsible use guide¶ and code examples‖ to facilitate the safe deployment ofLlama 2 and Llama 2-Chat.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 4,
+        "metadata": {
+          "doc_id": "llama2_paper",
+          "chunk_index": 1,
+          "page_number": 4,
+          "section": "Introduction",
+          "strategy": "semantic_paragraph",
+          "char_length": 954,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6443,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p34_c2 | data/llama2_paper.pdf | page 34]\nWhile our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+    "context_ids": [
+      "s3_p34_c2"
+    ],
+    "context_chars": 883,
+    "elapsed_ms": 28.99,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q11",
+    "split": "dev",
+    "question": "Phương pháp Ghost Attention (GAtt) được đề xuất nhằm giải quyết vấn đề gì trong các cuộc hội thoại?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 16,
+        "evidence": "To address these limitations, we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation (Bai et al., 2022b) that hacks the fine-tuning data to help the attention focus in a multi-stage process. GAtt enables dialogue control over multiple turns"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p16_c1",
+        "text": "However, our initial RLHF models tended to forget the initial instruction after a few turns of dialogue, as illustrated in Figure 9 (left). To address these limitations, we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation (Bai et al., 2022b) that hacks the fine-tuning data to help the attention focus in a multi-stage process. GAtt enables dialogue control over multiple turns, as illustrated in Figure 9 (right). GAtt Method. Assume we have access to a multi-turn dialogue dataset between two persons (e.g., a user and an assistant), with a list of messages[u1, a1, . . . , un, an], whereun and an correspond to the user and assistant messages for turnn, respectively. Then, we define an instruction,inst, that should be respected throughout the dialogue. For example,inst could be“act as.”We can then synthetically concatenate this instruction to all the user messages of the conversation.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 16,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "char_length": 929,
+          "section": "Fine-tuning",
+          "doc_id": "llama2_paper",
+          "source": "data/llama2_paper.pdf",
+          "page_number": 16,
+          "chunk_index": 1
+        },
+        "score": 0.6655,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "s3_p54_c0",
+        "text": "Dialogue Turn Baseline + GAtt 2 100% 100% 4 10% 100% 6 0% 100% 20 0% 100% Table 30: GAtt results.Llama 2-Chat with GAtt is able to refer to attributes 100% of the time, for up to 20 turns from our human evaluation. We limited the evaluated attributes to public figures and hobbies. The attention now spans beyond 20 turns.We tested the model ability to remember the system arguments troughahumanevaluation. Thearguments(e.g. hobbies, persona)aredefinedduringthefirstmessage, and then from turn 2 to 20. We explicitly asked the model to refer to them (e.g. “What is your favorite hobby?”, “What is your name?”), to measure the multi-turn memory ability ofLlama 2-Chat. We report the results in Table 30. Equipped with GAtt,Llama 2-Chat maintains 100% accuracy, always referring to the defined attribute, and so, up to 20 turns (we did not extend the human evaluation more, and all the examples had less than 4048 tokens in total over the turns).",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 54,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "section": "Appendix",
+          "page_number": 54,
+          "doc_id": "llama2_paper",
+          "chunk_index": 0,
+          "char_length": 944
+        },
+        "score": 0.6635,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p17_c0",
+        "text": "modify the original instruction half of the time to be less verbose, e.g.,“Always act as Napoleon from now”-> ”Figure: Napoleon.”These steps produce an SFT dataset, on which we can fine-tuneLlama 2-Chat. GAtt Evaluation. We applied GAtt after RLHF V3. We report a quantitative analysis indicating that GAtt is consistent up to 20+ turns, until the maximum context length is reached (see Appendix A.3.5). We tried to set constraints not present in the training of GAtt at inference time, for instance“Always answer with Haiku,” for which the model remained consistent as illustrated in Appendix Figure 28. Act as Oscar Wilde Give short answers Wh ich is the best city to live in? London, of course! Why is that ? My dear fellow, London is the ep itome of sophistic ation and culture . It is the city of Shakespeare and Dick ens, of the great univers ities, of the museums and galleries .",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 17,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "section": "Fine-tuning",
+          "strategy": "semantic_paragraph",
+          "page_number": 17,
+          "char_length": 886,
+          "doc_id": "llama2_paper",
+          "chunk_index": 0
+        },
+        "score": 0.6433,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p16_c1 | data/llama2_paper.pdf | page 16]\nHowever, our initial RLHF models tended to forget the initial instruction after a few turns of dialogue, as illustrated in Figure 9 (left). To address these limitations, we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation (Bai et al., 2022b) that hacks the fine-tuning data to help the attention focus in a multi-stage process. GAtt enables dialogue control over multiple turns, as illustrated in Figure 9 (right). GAtt Method. Assume we have access to a multi-turn dialogue dataset between two persons (e.g., a user and an assistant), with a list of messages[u1, a1, . . . , un, an], whereun and an correspond to the user and assistant messages for turnn, respectively. Then, we define an instruction,inst, that should be respected throughout the dialogue. For example,inst could be“act as.”We can then synthetically concatenate this instruction to all the user messages of the conversation.",
+    "context_ids": [
+      "s3_p16_c1"
+    ],
+    "context_chars": 975,
+    "elapsed_ms": 18.61,
+    "hit1": true,
+    "hit3": true,
+    "first_hit_rank": 1,
+    "mrr": 1.0,
+    "context_hit": true
+  },
+  {
+    "query_id": "Q12",
+    "split": "dev",
+    "question": "Trên bộ benchmark MMLU (5-shot), mô hình pretrained Llama 2 70B đạt kết quả chính xác bao nhiêu phần trăm?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 8,
+        "evidence": "MMLU (5-shot) 70.0 86.4 69.3 78.3 68.9"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p48_c0",
+        "text": "BoolQ PIQA SIQA Hella-Swag ARC-e ARC-c NQ TQA MMLU GSM8K Human-Eval MHA 71.0 79.3 48.2 75.1 71.2 43.0 12.4 44.7 28.0 4.9 7.9 MQA 70.6 79.0 47.9 74.5 71.6 41.9 14.5 42.8 26.5 4.8 7.3 GQA 69.4 78.8 48.6 75.4 72.1 42.5 14.0 46.2 26.9 5.3 7.9 Table 18: Attention architecture ablations.We report 0-shot results for all tasks except MMLU(5-shot) and GSM8K(8-shot). For GSM8K and Human-Eval we report maj@1 and pass@1 results. For NQ and TriviaQA we report EM. For all other tasks we report accuracy. Figure 24: Multi-query variants enable higher throughput with larger batch sizes, and show similar latency on smaller batches.Output length is fixed at 128 tokens. The first data point corresponds to batch size 1, and then we double it until the model runs out of memory. The MHA variant triggers an out-ofmemory error at a batch size of 1024 for a context of 256 tokens and at a batch size of 128 for 2k context, whereas MQA and GQA have successful runs in those settings.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 48,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "page_number": 48,
+          "char_length": 968,
+          "chunk_index": 0,
+          "doc_id": "llama2_paper",
+          "section": "Appendix",
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.7495,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p8_c2",
+        "text": "We also analysed the potential data contamination and share the details in Section A.6. Benchmark (shots) GPT-3.5 GPT-4 PaLM PaLM-2-L Llama 2 MMLU (5-shot) 70.0 86.4 69.3 78.3 68.9 TriviaQA (1-shot) – – 81.4 86.1 85.0 Natural Questions (1-shot) – – 29.3 37.5 33.0 GSM8K (8-shot) 57.1 92.0 56.5 80.7 56.8 HumanEval (0-shot) 48.1 67.0 26.2 – 29.9 BIG-Bench Hard (3-shot) – – 52.3 65.7 51.2 Table 4: Comparison to closed-source modelson academic benchmarks. Results for GPT-3.5 and GPT-4 are from OpenAI (2023). Results for the PaLM model are from Chowdhery et al. (2022). Results for the PaLM-2-L are from Anil et al. (2023). 3 Fine-tuning Llama 2-Chat is the result of several months of research and iterative applications of alignment techniques, including both instruction tuning and RLHF, requiring significant computational and annotation resources.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 8,
+        "metadata": {
+          "page_number": 8,
+          "chunk_index": 2,
+          "section": "Fine-tuning",
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper",
+          "char_length": 852,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.7486,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "s3_p49_c0",
+        "text": "Humanities STEM Social Sciences Other Average MPT 7B 26.7 25.3 27.1 28.2 26.8 30B 44.5 39.0 52.8 52.9 46.9 Falcon 7B 26.4 26.2 24.7 27.4 26.2 40B 49.3 45.5 65.4 65.0 55.4 Llama 1 7B 34.0 30.5 38.3 38.1 35.1 13B 45.0 35.8 53.8 53.3 46.9 33B 55.8 46.0 66.7 63.4 57.8 65B 61.8 51.7 72.9 67.4 63.4 Llama 2 7B 42.9 36.4 51.2 52.2 45.3 13B 52.8 44.1 62.6 61.1 54.8 34B 59.4 52.1 71.8 69.2 62.6 70B 65.0 58.0 80.3 74.6 68.9 Table19: Five-shotperformanceontheMassiveMultitaskLanguageUnderstanding(MMLU)benchmark.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 49,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "char_length": 504,
+          "page_number": 49,
+          "doc_id": "llama2_paper",
+          "strategy": "semantic_paragraph",
+          "section": "Appendix",
+          "chunk_index": 0
+        },
+        "score": 0.7113,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p48_c0 | data/llama2_paper.pdf | page 48]\nBoolQ PIQA SIQA Hella-Swag ARC-e ARC-c NQ TQA MMLU GSM8K Human-Eval MHA 71.0 79.3 48.2 75.1 71.2 43.0 12.4 44.7 28.0 4.9 7.9 MQA 70.6 79.0 47.9 74.5 71.6 41.9 14.5 42.8 26.5 4.8 7.3 GQA 69.4 78.8 48.6 75.4 72.1 42.5 14.0 46.2 26.9 5.3 7.9 Table 18: Attention architecture ablations.We report 0-shot results for all tasks except MMLU(5-shot) and GSM8K(8-shot). For GSM8K and Human-Eval we report maj@1 and pass@1 results. For NQ and TriviaQA we report EM. For all other tasks we report accuracy. Figure 24: Multi-query variants enable higher throughput with larger batch sizes, and show similar latency on smaller batches.Output length is fixed at 128 tokens. The first data point corresponds to batch size 1, and then we double it until the model runs out of memory. The MHA variant triggers an out-ofmemory error at a batch size of 1024 for a context of 256 tokens and at a batch size of 128 for 2k context, whereas MQA and GQA have successful runs in those settings.",
+    "context_ids": [
+      "s3_p48_c0"
+    ],
+    "context_chars": 1014,
+    "elapsed_ms": 18.29,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "mrr": 0.5,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q13",
+    "split": "dev",
+    "question": "Trên bộ benchmark lập trình HumanEval (0-shot pass@1), phiên bản Llama 2 70B đạt kết quả là bao nhiêu?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 8,
+        "evidence": "HumanEval (0-shot) 48.1 67.0 26.2 – 29.9"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p7_c3",
+        "text": "WereporttheaverageofPIQA(Bisketal.,2020), SIQA(Sapetal.,2019), HellaSwag (Zellers et al., 2019a), WinoGrande (Sakaguchi et al., 2021), ARC easy and challenge (Clark et al., 2018), OpenBookQA (Mihaylov et al., 2018), and CommonsenseQA (Talmor et al., 2018). We report 7-shot results for CommonSenseQA and 0-shot results for all other benchmarks. • World Knowledge.We evaluate the 5-shot performance on NaturalQuestions (Kwiatkowski et al., 2019) and TriviaQA (Joshi et al., 2017) and report the average. • Reading Comprehension.For reading comprehension, we report the 0-shot average on SQuAD (Rajpurkar et al., 2018), QuAC (Choi et al., 2018), and BoolQ (Clark et al., 2019). • MATH. We report the average of the GSM8K (8 shot) (Cobbe et al., 2021) and MATH (4 shot) (Hendrycks et al., 2021) benchmarks attop 1. ∗∗https://sustainability.fb.com/2021-sustainability-report/ ††https://www.mosaicml.com/blog/mpt-7b",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 7,
+        "metadata": {
+          "section": "Pretraining",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 3,
+          "char_length": 910,
+          "page_number": 7,
+          "source": "data/llama2_paper.pdf",
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6935,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p48_c2",
+        "text": "We evaluate theLlama 2 model together with other open-source models on the NaturalQuestions and TriviaQA benchmarks (Table 22). Reading Comprehension In Table 23 we report zero-shot and few-shot results on SQUAD and zero-shot and one-shot experiments on QUAC. HereLlama 2 performs best on all evaluation settings and models except the QUAC 0-shot whereLlama 1 30B performs slightly better. Exams. In Table 24, we present fine-grained results from the English part of the AGI Eval (Zhong et al., 2023) benchmark. AGI Eval is a collection of standardized exams in different subjects.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 48,
+        "metadata": {
+          "chunk_index": 2,
+          "strategy": "semantic_paragraph",
+          "section": "Appendix",
+          "doc_id": "llama2_paper",
+          "page_number": 48,
+          "char_length": 581,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6898,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p8_c2",
+        "text": "We also analysed the potential data contamination and share the details in Section A.6. Benchmark (shots) GPT-3.5 GPT-4 PaLM PaLM-2-L Llama 2 MMLU (5-shot) 70.0 86.4 69.3 78.3 68.9 TriviaQA (1-shot) – – 81.4 86.1 85.0 Natural Questions (1-shot) – – 29.3 37.5 33.0 GSM8K (8-shot) 57.1 92.0 56.5 80.7 56.8 HumanEval (0-shot) 48.1 67.0 26.2 – 29.9 BIG-Bench Hard (3-shot) – – 52.3 65.7 51.2 Table 4: Comparison to closed-source modelson academic benchmarks. Results for GPT-3.5 and GPT-4 are from OpenAI (2023). Results for the PaLM model are from Chowdhery et al. (2022). Results for the PaLM-2-L are from Anil et al. (2023). 3 Fine-tuning Llama 2-Chat is the result of several months of research and iterative applications of alignment techniques, including both instruction tuning and RLHF, requiring significant computational and annotation resources.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 8,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 2,
+          "char_length": 852,
+          "section": "Fine-tuning",
+          "page_number": 8,
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6869,
+        "strategy": "dense",
+        "hit": true
+      }
+    ],
+    "context": "[s3_p7_c3 | data/llama2_paper.pdf | page 7]\nWereporttheaverageofPIQA(Bisketal.,2020), SIQA(Sapetal.,2019), HellaSwag (Zellers et al., 2019a), WinoGrande (Sakaguchi et al., 2021), ARC easy and challenge (Clark et al., 2018), OpenBookQA (Mihaylov et al., 2018), and CommonsenseQA (Talmor et al., 2018). We report 7-shot results for CommonSenseQA and 0-shot results for all other benchmarks. • World Knowledge.We evaluate the 5-shot performance on NaturalQuestions (Kwiatkowski et al., 2019) and TriviaQA (Joshi et al., 2017) and report the average. • Reading Comprehension.For reading comprehension, we report the 0-shot average on SQuAD (Rajpurkar et al., 2018), QuAC (Choi et al., 2018), and BoolQ (Clark et al., 2019). • MATH. We report the average of the GSM8K (8 shot) (Cobbe et al., 2021) and MATH (4 shot) (Hendrycks et al., 2021) benchmarks attop 1. ∗∗https://sustainability.fb.com/2021-sustainability-report/ ††https://www.mosaicml.com/blog/mpt-7b",
+    "context_ids": [
+      "s3_p7_c3"
+    ],
+    "context_chars": 954,
+    "elapsed_ms": 18.15,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 3,
+    "mrr": 0.3333,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q14",
+    "split": "dev",
+    "question": "Tỷ lệ dữ liệu tiếng Anh chiếm khoảng bao nhiêu phần trăm trong tập dữ liệu tiền huấn luyện của Llama 2?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 22,
+        "evidence": "Language Percent Language Percent en 89.70% uk 0.07% unknown 8.38% ko 0.06%"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "Discussion",
+          "strategy": "semantic_paragraph",
+          "page_number": 34,
+          "char_length": 837,
+          "doc_id": "llama2_paper",
+          "chunk_index": 2,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6542,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p77_c1",
+        "text": "License A custom commercial license is available at: ai.meta.com/resources/ models-and-libraries/llama-downloads/ Where to send comments Instructions on how to provide feedback or comments on the model can be found in the model README, or by opening an issue in the GitHub repository (https://github.com/facebookresearch/llama/). Intended Use Intended Use Cases Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. Out-of-Scope Uses Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Llama 2. Hardware and Software(Section 2.2) Training Factors We used custom training libraries, Meta’s Research Super Cluster, and production clusters for pretraining.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 77,
+        "metadata": {
+          "chunk_index": 1,
+          "doc_id": "llama2_paper",
+          "char_length": 987,
+          "page_number": 77,
+          "section": "Appendix",
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6201,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p37_c3",
+        "text": "So, Daniel Sohn, Simon Tokumine, Dasha Valter, Vijay Vasudevan, Kiran Vodrahalli, Xuezhi Wang, Pidong Wang, Zirui Wang, Tao Wang, John Wieting, Yuhuai Wu, Kelvin Xu, Yunhan Xu, Linting Xue, Pengcheng Yin, Jiahui Yu, Qiao Zhang, Steven Zheng, Ce Zheng, Weikang Zhou, Denny Zhou, Slav Petrov, and Yonghui Wu. Palm 2 technical report, 2023. Amanda Askell, Yuntao Bai, Anna Chen, Dawn Drain, Deep Ganguli, Tom Henighan, Andy Jones, Nicholas Joseph, Ben Mann, Nova DasSarma, Nelson Elhage, Zac Hatfield-Dodds, Danny Hernandez, Jackson Kernion, Kamal Ndousse, Catherine Olsson, Dario Amodei, Tom Brown, Jack Clark, Sam McCandlish, and Chris Olah. A general language assistant as a laboratory for alignment.arXiv preprint arXiv:2112.00861, 2021a. Amanda Askell, Yuntao Bai, Anna Chen, Dawn Drain, Deep Ganguli, Tom Henighan, Andy Jones, Nicholas Joseph, Ben Mann, Nova DasSarma, et al. A general language assistant as a laboratory for alignment.arXiv preprint arXiv:2112.00861, 2021b.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 37,
+        "metadata": {
+          "page_number": 37,
+          "chunk_index": 3,
+          "doc_id": "llama2_paper",
+          "char_length": 977,
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "section": "References"
+        },
+        "score": 0.616,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p34_c2 | data/llama2_paper.pdf | page 34]\nWhile our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+    "context_ids": [
+      "s3_p34_c2"
+    ],
+    "context_chars": 883,
+    "elapsed_ms": 17.71,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q15",
+    "split": "dev",
+    "question": "Trong phần Fine-tuning về Safety, các câu nhắc (prompts) có yếu tố rủi ro được phân loại thành ba danh mục chính nào?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 23,
+        "evidence": "Theriskcategoriesconsideredcanbebroadlydividedintothefollowingthreecategories: illicitandcriminal activities(e.g., terrorism, theft, human trafficking);hateful and harmful activities"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p25_c0",
+        "text": "0.0 0.2 0.4 0.6 0.8 1.0 Safety RM Score before Safety RLHF 0.0 0.2 0.4 0.6 0.8 1.0Safety RM Score after Safety RLHF Safety Improvement\n\n0 1000 0.0 0.2 0.4 0.6 0.8 1.0 Helpfulness RM Score before Safety RLHF 0.0 0.2 0.4 0.6 0.8 1.0Helpfulness RM Score after Safety RLHF",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 25,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "page_number": 25,
+          "strategy": "semantic_paragraph",
+          "chunk_index": 0,
+          "char_length": 268,
+          "doc_id": "llama2_paper",
+          "section": "Safety"
+        },
+        "score": 0.7188,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p22_c0",
+        "text": "Language Percent Language Percent en 89.70% uk 0.07% unknown 8.38% ko 0.06% de 0.17% ca 0.04% fr 0.16% sr 0.04% sv 0.15% id 0.03% zh 0.13% cs 0.03% es 0.13% fi 0.03% ru 0.13% hu 0.03% nl 0.12% no 0.03% it 0.11% ro 0.03% ja 0.10% bg 0.02% pl 0.09% da 0.02% pt 0.09% sl 0.01% vi 0.08% hr 0.01% Table 10: Language distribution in pretraining data with percentage >= 0.005%. Most data is in English, meaning that Llama 2 will perform best for English-language use cases. The largeunknown category is partially made up of programming code data. SafetyBenchmarksforPretrainedModels. Weevaluatethesafetycapabilitiesof Llama 2 onthreepopular automatic benchmarks, pertaining to three key dimensions of LM safety. 1. Truthfulness, referring to whether a language model produces known falsehoods due to misconceptions or false beliefs. We employTruthfulQA(Lin et al., 2021) to measure how well our LLMs can generate reliable outputs that agree with factuality and common sense. 2.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 22,
+        "metadata": {
+          "page_number": 22,
+          "source": "data/llama2_paper.pdf",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 0,
+          "char_length": 970,
+          "doc_id": "llama2_paper",
+          "section": "Safety"
+        },
+        "score": 0.6987,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p24_c1",
+        "text": "4.2.2 Safety Supervised Fine-Tuning In accordance with the established guidelines from Section 4.2.1, we gather prompts and demonstrations of safe model responses from trained annotators, and use the data for supervised fine-tuning in the same manner as described in Section 3.1. An example can be found in Table 5. The annotators are instructed to initially come up with prompts that they think could potentially induce the model to exhibit unsafe behavior, i.e., perform red teaming, as defined by the guidelines. Subsequently, annotators are tasked with crafting a safe and helpful response that the model should produce. 4.2.3 Safety RLHF Weobserveearlyinthedevelopmentof Llama 2-Chatthatitisabletogeneralizefromthesafedemonstrations insupervisedfine-tuning. Themodelquicklylearnstowritedetailedsaferesponses, addresssafetyconcerns, explain why the topic might be sensitive, and provide additional helpful information.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 24,
+        "metadata": {
+          "chunk_index": 1,
+          "section": "Safety",
+          "page_number": 24,
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper",
+          "char_length": 922,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6917,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p25_c0 | data/llama2_paper.pdf | page 25]\n0.0 0.2 0.4 0.6 0.8 1.0 Safety RM Score before Safety RLHF 0.0 0.2 0.4 0.6 0.8 1.0Safety RM Score after Safety RLHF Safety Improvement\n\n0 1000 0.0 0.2 0.4 0.6 0.8 1.0 Helpfulness RM Score before Safety RLHF 0.0 0.2 0.4 0.6 0.8 1.0Helpfulness RM Score after Safety RLHF",
+    "context_ids": [
+      "s3_p25_c0"
+    ],
+    "context_chars": 314,
+    "elapsed_ms": 19.39,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  }
+]

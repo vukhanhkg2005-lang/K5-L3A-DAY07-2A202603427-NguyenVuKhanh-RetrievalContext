@@ -1,0 +1,18 @@
+[
+  {
+    "strategy": "Hybrid + Rerank",
+    "split": "dev",
+    "n_answerable": 15,
+    "hit1": "6/15 (40.00%)",
+    "hit3": "9/15 (60.00%)",
+    "context_evidence_rate": "6/15 (40.00%)",
+    "mrr_at_3": 0.4889,
+    "hit1_count": 6,
+    "hit3_count": 9,
+    "context_hit_count": 6,
+    "avg_context_chars": 943.8,
+    "median_ms": 15.52,
+    "avg_ms": 20.45,
+    "estimated_cost_usd": 0.0
+  }
+]

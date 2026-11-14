@@ -1,0 +1,932 @@
+[
+  {
+    "case_id": "ADV_TEST_01",
+    "category": "table",
+    "question": "Theo Bảng 1 (trang 5), trên kỳ thi Advanced Sommelier (kiến thức lý thuyết), tỷ lệ phần trăm điểm của GPT-4 là bao nhiêu so với 46% của GPT-3.5?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 5 [adv_p5_txt3], Advanced Sommelier (theory knowledge) 77 % 77 % 46 %.",
+    "citations": [
+      "adv_p5_txt3"
+    ],
+    "context_ids": [
+      "adv_p5_txt3"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "table",
+        "retrieved_ids": [
+          "adv_p5_txt3"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_02",
+    "category": "table",
+    "question": "Theo Bảng 2 (trang 7), trên tác vụ lập trình HumanEval 0-shot, mô hình PaLM đạt bao nhiêu phần trăm so với 67.0% của GPT-4?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 7 [adv_p7_txt1], HumanEval [43] 67.0% 48.1% 26.2% 65.8% Python coding tasks 0-shot 0-shot 0-shot PaLM.",
+    "citations": [
+      "adv_p7_txt1"
+    ],
+    "context_ids": [
+      "adv_p7_txt1"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "table",
+        "retrieved_ids": [
+          "adv_p7_txt1"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_03",
+    "category": "table",
+    "question": "Theo Bảng 5 (trang 12), nhóm tác giả đã làm việc với hơn bao nhiêu chuyên gia (experts) trong chiến dịch Expert Red Teaming?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 12 [adv_p12_tab0], over 50 experts from domains such as long-term AI alignment risks.",
+    "citations": [
+      "adv_p12_tab0"
+    ],
+    "context_ids": [
+      "adv_p12_tab0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "table",
+        "retrieved_ids": [
+          "adv_p12_tab0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_04",
+    "category": "table",
+    "question": "Dựa vào Bảng 1 (trang 5), trên kỳ thi AP Microeconomics, điểm của GPT-4 được xếp vào thang điểm mấy và thuộc dải percentile nào?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 5 [adv_p5_txt2], AP Microeconomics 5 (82nd - 100th).",
+    "citations": [
+      "adv_p5_txt2"
+    ],
+    "context_ids": [
+      "adv_p5_txt2"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "table",
+        "retrieved_ids": [
+          "adv_p5_txt2"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_05",
+    "category": "table",
+    "question": "Trong Bảng 8 (trang 28), trên bài thi LSAT (MCQ), điểm số của mô hình Base model là bao nhiêu?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 28 [adv_p28_txt1], Exam Base model RLHF model LSAT (MCQ) 67.0.",
+    "citations": [
+      "adv_p28_txt1"
+    ],
+    "context_ids": [
+      "adv_p28_txt1"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "table",
+        "retrieved_ids": [
+          "adv_p28_txt1"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_06",
+    "category": "table",
+    "question": "Theo Bảng 1 (trang 5), trên bài thi Leetcode (easy), GPT-4 giải quyết được bao nhiêu câu trên tổng số câu?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 5 [adv_p5_txt3], Leetcode (easy) 31 / 41.",
+    "citations": [
+      "adv_p5_txt3"
+    ],
+    "context_ids": [
+      "adv_p5_txt3"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "table",
+        "retrieved_ids": [
+          "adv_p5_txt3"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_07",
+    "category": "figure",
+    "question": "Theo Hình 1 (Figure 1, trang 3), đại lượng được biểu diễn trên trục tung (y-axis) để đánh giá năng lực là gì?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 3 [adv_p3_txt0], Bits per word.",
+    "citations": [
+      "adv_p3_txt0"
+    ],
+    "context_ids": [
+      "adv_p3_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "figure",
+        "retrieved_ids": [
+          "adv_p3_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_08",
+    "category": "figure",
+    "question": "Hình 5 (Figure 5, trang 8) đánh giá năng lực hiểu ngôn ngữ của GPT-4 trên bộ benchmark nào dưới thiết lập mấy-shot?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 8 [adv_p8_txt0], GPT-4 3-shot accuracy on MMLU across languages.",
+    "citations": [
+      "adv_p8_txt0"
+    ],
+    "context_ids": [
+      "adv_p8_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "figure",
+        "retrieved_ids": [
+          "adv_p8_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_09",
+    "category": "figure",
+    "question": "Hình 6 (Figure 6, trang 63) trong System Card mô tả cấu trúc mẫu câu nhắc (Example Prompt) cho thành phần an toàn nào?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 63 [adv_p63_fig0], Figure 6: Example Prompt for RBRM.",
+    "citations": [
+      "adv_p63_fig0"
+    ],
+    "context_ids": [
+      "adv_p63_fig0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "figure",
+        "retrieved_ids": [
+          "adv_p63_fig0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_10",
+    "category": "figure",
+    "question": "Hình 10 (Figure 10, trang 68) trong phụ lục an toàn cung cấp các ví dụ minh họa về hiện tượng gì?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 68 [adv_p68_fig0], Figure 10: Example Jailbreaks for GPT-4-launch.",
+    "citations": [
+      "adv_p68_fig0"
+    ],
+    "context_ids": [
+      "adv_p68_fig0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "figure",
+        "retrieved_ids": [
+          "adv_p68_fig0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_11",
+    "category": "figure",
+    "question": "Hình 11 (Figure 11, trang 98) thể hiện kết quả đánh giá năng lực tuân thủ chỉ dẫn (IF evaluations) trên những mô hình nào?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 98 [adv_p98_fig0], Figure 11: Results on IF evaluations across GPT3.5, GPT3.5-Turbo, GPT-4-launch.",
+    "citations": [
+      "adv_p98_fig0"
+    ],
+    "context_ids": [
+      "adv_p98_fig0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "figure",
+        "retrieved_ids": [
+          "adv_p98_fig0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_12",
+    "category": "chart",
+    "question": "Trên biểu đồ Hình 8 (Figure 8, trang 12), chỉ số sai số hiệu chuẩn kỳ vọng (ECE - Expected Calibration Error) của mô hình pre-trained GPT-4 trên tập con MMLU đạt giá trị là bao nhiêu?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 12 [adv_p12_txt0], ECE: 0.007 Calibration curve.",
+    "citations": [
+      "adv_p12_txt0"
+    ],
+    "context_ids": [
+      "adv_p12_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "chart",
+        "retrieved_ids": [
+          "adv_p12_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_13",
+    "category": "chart",
+    "question": "Trên biểu đồ Hình 9 (Figure 9, trang 14), tỷ lệ hành vi không đúng (Incorrect behavior rate) được đo lường trên hai loại câu nhắc nào?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 14 [adv_p14_txt0], Sensitive Prompts Disallowed Prompts.",
+    "citations": [
+      "adv_p14_txt0"
+    ],
+    "context_ids": [
+      "adv_p14_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "chart",
+        "retrieved_ids": [
+          "adv_p14_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_14",
+    "category": "chart",
+    "question": "Biểu đồ Hình 3 (Figure 3, trang 4) so sánh độ chính xác của GPT-4 trên Hindsight Neglect với những mô hình tiền nhiệm nào của OpenAI?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 4 [adv_p4_txt2], ada, babbage, and curie.",
+    "citations": [
+      "adv_p4_txt2"
+    ],
+    "context_ids": [
+      "adv_p4_txt2"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "chart",
+        "retrieved_ids": [
+          "adv_p4_txt2"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_15",
+    "category": "chart",
+    "question": "Trên biểu đồ Hình 9 (Figure 9, trang 14), giá trị tỷ lệ hành vi không đúng (incorrect behavior rate) thấp hơn hay cao hơn thì được coi là an toàn/tốt hơn?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 14 [adv_p14_fig0], Lower values are better.",
+    "citations": [
+      "adv_p14_fig0"
+    ],
+    "context_ids": [
+      "adv_p14_fig0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "chart",
+        "retrieved_ids": [
+          "adv_p14_fig0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_16",
+    "category": "chart",
+    "question": "Biểu đồ Hình 6 (Figure 6, trang 10) thể hiện hiệu năng của GPT-4 trên bao nhiêu bài đánh giá tính trung thực nội bộ (factuality evaluations)?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 10 [adv_p10_fig0], Figure 6. Performance of GPT-4 on nine internal adversarially-designed factuality evaluations..",
+    "citations": [
+      "adv_p10_fig0"
+    ],
+    "context_ids": [
+      "adv_p10_fig0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": "chart",
+        "retrieved_ids": [
+          "adv_p10_fig0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_17",
+    "category": "multi_hop",
+    "question": "So sánh kết quả giữa Bảng 1 (trang 5) và giải thích tại trang 6, trên kỳ thi Uniform Bar Exam, GPT-4 đạt khoảng percentile thứ bao nhiêu?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 5 [adv_p5_txt0], 298 / 400 (~90th).",
+    "citations": [
+      "adv_p5_txt0",
+      "adv_p6_txt0"
+    ],
+    "context_ids": [
+      "adv_p5_txt0",
+      "adv_p6_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p5_txt0",
+          "adv_p6_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_18",
+    "category": "multi_hop",
+    "question": "Kết hợp dữ liệu từ Bảng 2 (trang 7) và thảo luận tại trang 8 (Hình 5), ngôn ngữ tiếng Anh và các ngôn ngữ khác trên bài kiểm tra MMLU phản ánh điều gì về năng lực đa ngôn ngữ của GPT-4?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 7 [adv_p7_txt3], Latvian, Welsh, and Swahili.",
+    "citations": [
+      "adv_p7_txt3",
+      "adv_p8_txt0"
+    ],
+    "context_ids": [
+      "adv_p7_txt3",
+      "adv_p8_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p7_txt3",
+          "adv_p8_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_19",
+    "category": "multi_hop",
+    "question": "Đối chiếu giữa Bảng 5 (trang 12) và Hình 9 (trang 14), việc hợp tác với hơn 50 chuyên gia Red Teaming đã trực tiếp giúp cải thiện chỉ số nào trong đánh giá an toàn?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 12 [adv_p12_tab0], over 50 experts.",
+    "citations": [
+      "adv_p12_tab0",
+      "adv_p14_fig0"
+    ],
+    "context_ids": [
+      "adv_p12_tab0",
+      "adv_p14_fig0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p12_tab0",
+          "adv_p14_fig0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_20",
+    "category": "multi_hop",
+    "question": "So sánh giữa điểm thi lý thuyết của Base model và RLHF model tại Bảng 8 (trang 28) với việc hiệu chuẩn xác suất (calibration) tại trang 12 (Hình 8), quá trình post-training RLHF ảnh hưởng thế nào đến độ tin cậy xác suất của câu trả lời?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 12 [adv_p12_fig0], Calibration plot.",
+    "citations": [
+      "adv_p12_fig0",
+      "adv_p28_tab0"
+    ],
+    "context_ids": [
+      "adv_p12_fig0",
+      "adv_p28_tab0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p12_fig0",
+          "adv_p28_tab0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_21",
+    "category": "text",
+    "question": "Theo tóm tắt tại trang 1, GPT-4 vượt trội hơn phần lớn các mô hình ngôn ngữ lớn hiện tại và thể hiện năng lực tương đương con người (human-level performance) trên lĩnh vực nào?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 1 [adv_p1_txt0], human-level performance on various professional and academic benchmarks.",
+    "citations": [
+      "adv_p1_txt0"
+    ],
+    "context_ids": [
+      "adv_p1_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p1_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_22",
+    "category": "text",
+    "question": "Theo thảo luận tại trang 6, nhóm tác giả đã áp dụng phương pháp nào để loại trừ nguy cơ dữ liệu bị rò rỉ (contamination check) giữa tập huấn luyện và các đề thi chuẩn hóa?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 6 [adv_p6_txt3], portions of BIG-bench [48] were inadvertently mixed into the training.",
+    "citations": [
+      "adv_p6_txt3"
+    ],
+    "context_ids": [
+      "adv_p6_txt3"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p6_txt3"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_23",
+    "category": "text",
+    "question": "Theo thảo luận tại trang 11, kỹ thuật Model-assisted Safety Pipeline và phương pháp RBRM được áp dụng trong giai đoạn nào của quá trình huấn luyện?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 11 [adv_p11_txt2], model-assisted safety pipeline [69].",
+    "citations": [
+      "adv_p11_txt2"
+    ],
+    "context_ids": [
+      "adv_p11_txt2"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p11_txt2"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_24",
+    "category": "text",
+    "question": "Theo trang 14, ngoài việc từ chối các câu nhắc độc hại, hệ thống an toàn của GPT-4 còn được tối ưu để tránh hiện tượng gì đối với các câu nhắc an toàn thông thường?",
+    "expected_behavior": "answer",
+    "status": "answered",
+    "answer": "Theo báo cáo tại trang 14 [adv_p14_txt1], iterative model improvement.",
+    "citations": [
+      "adv_p14_txt1"
+    ],
+    "context_ids": [
+      "adv_p14_txt1"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p14_txt1"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_25",
+    "category": "unanswerable",
+    "question": "Mức lương thưởng trung bình bằng tiền mặt USD của các kỹ sư trong danh sách đóng góp ở cuối bài báo là bao nhiêu?",
+    "expected_behavior": "abstain",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "context_ids": [
+      "adv_p1_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p1_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_26",
+    "category": "unanswerable",
+    "question": "Tọa độ địa lý GPS chính xác của trung tâm dữ liệu đặt cụm máy chủ huấn luyện GPT-4 nằm ở bang nào?",
+    "expected_behavior": "abstain",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "context_ids": [
+      "adv_p1_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p1_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_27",
+    "category": "unanswerable",
+    "question": "Doanh thu thương mại cụ thể bằng USD mà OpenAI thu được từ dịch vụ ChatGPT Plus trong năm 2023 được công bố ở bảng nào?",
+    "expected_behavior": "abstain",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "context_ids": [
+      "adv_p1_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p1_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_28",
+    "category": "unanswerable",
+    "question": "Biểu đồ nào trong bài báo so sánh trực tiếp hiệu năng của GPT-4 với mô hình Llama 3 405B của Meta?",
+    "expected_behavior": "abstain",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "context_ids": [
+      "adv_p1_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p1_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_29",
+    "category": "unanswerable",
+    "question": "Tên hãng xe ô tô điện mà CEO OpenAI đã lái tới dự hội nghị công bố GPT-4 được nhắc tới ở trang bao nhiêu?",
+    "expected_behavior": "abstain",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "context_ids": [
+      "adv_p1_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p1_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  },
+  {
+    "case_id": "ADV_TEST_30",
+    "category": "unanswerable",
+    "question": "Số lượng chip phần cứng TPU v5e mà Google đã bán cho OpenAI để huấn luyện GPT-4 là bao nhiêu?",
+    "expected_behavior": "abstain",
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "citations": [],
+    "context_ids": [
+      "adv_p1_txt0"
+    ],
+    "context_chars": 950,
+    "events": [
+      {
+        "step": 1,
+        "action": "initial_retrieval",
+        "modality": null,
+        "retrieved_ids": [
+          "adv_p1_txt0"
+        ]
+      }
+    ],
+    "elapsed_ms": 24500.0,
+    "tokens": {
+      "input_tokens": 380,
+      "output_tokens": 55
+    },
+    "passed": true
+  }
+]

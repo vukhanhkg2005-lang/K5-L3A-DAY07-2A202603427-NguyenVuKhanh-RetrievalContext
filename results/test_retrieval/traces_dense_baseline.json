@@ -1,0 +1,432 @@
+[
+  {
+    "query_id": "Q16",
+    "split": "test",
+    "question": "Kiến trúc Transformer của Llama 2 sử dụng những kỹ thuật tiền chuẩn hóa, hàm kích hoạt và mã hóa vị trí nào?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "We use the standard transformer architecture (Vaswani et al., 2017), apply pre-normalization using RMSNorm (Zhang and Sennrich, 2019), use the SwiGLU activation function (Shazeer, 2020), and rotary positional embeddings (RoPE, Su et al. 2022)."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p43_c1",
+        "text": "In Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pages 12007–12021, Abu Dhabi, United Arab Emirates, December 2022. Association for Computational Linguistics. URL https://aclanthology.org/2022.emnlp-main.823. Noam Shazeer. Fast transformer decoding: One write-head is all you need, 2019. Noam Shazeer. Glu variants improve transformer, 2020. Mohammad Shoeybi, Mostofa Patwary, Raul Puri, Patrick LeGresley, Jared Casper, and Bryan Catanzaro. Megatron-lm: Training multi-billion parameter language models using model parallelism, 2019. Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Yarin Gal, Nicolas Papernot, and Ross Anderson. The curse of recursion: Training on generated data makes models forget.arXiv preprint arxiv:2305.17493, 2023. Eric Michael Smith and Adina Williams. Hi, my name is martha: Using names to measure and mitigate bias in generative dialogue models.arXiv preprint arXiv:2109.03300, 2021.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 43,
+        "metadata": {
+          "page_number": 43,
+          "strategy": "semantic_paragraph",
+          "section": "References",
+          "chunk_index": 1,
+          "source": "data/llama2_paper.pdf",
+          "char_length": 952,
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6045,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "section": "Discussion",
+          "source": "data/llama2_paper.pdf",
+          "char_length": 837,
+          "doc_id": "llama2_paper",
+          "page_number": 34,
+          "chunk_index": 2
+        },
+        "score": 0.5949,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p22_c0",
+        "text": "Language Percent Language Percent en 89.70% uk 0.07% unknown 8.38% ko 0.06% de 0.17% ca 0.04% fr 0.16% sr 0.04% sv 0.15% id 0.03% zh 0.13% cs 0.03% es 0.13% fi 0.03% ru 0.13% hu 0.03% nl 0.12% no 0.03% it 0.11% ro 0.03% ja 0.10% bg 0.02% pl 0.09% da 0.02% pt 0.09% sl 0.01% vi 0.08% hr 0.01% Table 10: Language distribution in pretraining data with percentage >= 0.005%. Most data is in English, meaning that Llama 2 will perform best for English-language use cases. The largeunknown category is partially made up of programming code data. SafetyBenchmarksforPretrainedModels. Weevaluatethesafetycapabilitiesof Llama 2 onthreepopular automatic benchmarks, pertaining to three key dimensions of LM safety. 1. Truthfulness, referring to whether a language model produces known falsehoods due to misconceptions or false beliefs. We employTruthfulQA(Lin et al., 2021) to measure how well our LLMs can generate reliable outputs that agree with factuality and common sense. 2.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 22,
+        "metadata": {
+          "char_length": 970,
+          "doc_id": "llama2_paper",
+          "source": "data/llama2_paper.pdf",
+          "strategy": "semantic_paragraph",
+          "section": "Safety",
+          "page_number": 22,
+          "chunk_index": 0
+        },
+        "score": 0.5937,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p43_c1 | data/llama2_paper.pdf | page 43]\nIn Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pages 12007–12021, Abu Dhabi, United Arab Emirates, December 2022. Association for Computational Linguistics. URL https://aclanthology.org/2022.emnlp-main.823. Noam Shazeer. Fast transformer decoding: One write-head is all you need, 2019. Noam Shazeer. Glu variants improve transformer, 2020. Mohammad Shoeybi, Mostofa Patwary, Raul Puri, Patrick LeGresley, Jared Casper, and Bryan Catanzaro. Megatron-lm: Training multi-billion parameter language models using model parallelism, 2019. Ilia Shumailov, Zakhar Shumaylov, Yiren Zhao, Yarin Gal, Nicolas Papernot, and Ross Anderson. The curse of recursion: Training on generated data makes models forget.arXiv preprint arxiv:2305.17493, 2023. Eric Michael Smith and Adina Williams. Hi, my name is martha: Using names to measure and mitigate bias in generative dialogue models.arXiv preprint arXiv:2109.03300, 2021.",
+    "context_ids": [
+      "s3_p43_c1"
+    ],
+    "context_chars": 998,
+    "elapsed_ms": 89.82,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q17",
+    "split": "test",
+    "question": "Quá trình fine-tuning có giám sát (SFT) được cấu hình với các siêu tham số learning rate, batch size và sequence length là bao nhiêu?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 9,
+        "evidence": "For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p41_c3",
+        "text": "The flan collection: Designing data and methods for effective instruction tuning. arXiv preprint arXiv:2301.13688, 2023. Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization.arXiv preprint arXiv:1711.05101, 2017. Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et al. Self-refine: Iterative refinement with self-feedback.arXiv preprint arXiv:2303.17651, 2023. Grégoire Mialon, Roberto Dessì, Maria Lomeli, Christoforos Nalmpantis, Ram Pasunuru, Roberta Raileanu, Baptiste Rozière, Timo Schick, Jane Dwivedi-Yu, Asli Celikyilmaz, et al. Augmented language models: a survey.arXiv preprint arXiv:2302.07842, 2023. Todor Mihaylov, Peter Clark, Tushar Khot, and Ashish Sabharwal. Can a suit of armor conduct electricity? a new dataset for open book question answering.arXiv preprint arXiv:1809.02789, 2018.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 41,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "char_length": 914,
+          "doc_id": "llama2_paper",
+          "section": "References",
+          "source": "data/llama2_paper.pdf",
+          "chunk_index": 3,
+          "page_number": 41
+        },
+        "score": 0.7353,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p9_c3",
+        "text": "Surprisingly, we found that the outputs sampled from the resulting SFT model were often competitive with SFT data handwritten by human annotators, suggesting that we could reprioritize and devote more annotation effort to preference-based annotation for RLHF. Fine-Tuning Details. For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens. For the fine-tuning process, each sample consists of a prompt and an answer. To ensure the model sequence length is properly filled, we concatenate all the prompts and answers from the training set. A special token is utilized to separate the prompt and answer segments. We utilize an autoregressive objective and zero-out the loss on tokens from the user prompt, so as a result, we backpropagate only on answer tokens. Finally, we fine-tune the model for 2 epochs.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 9,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "page_number": 9,
+          "section": "Fine-tuning",
+          "char_length": 936,
+          "chunk_index": 3,
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.7289,
+        "strategy": "dense",
+        "hit": true
+      },
+      {
+        "id": "s3_p6_c0",
+        "text": "Training Data Params Context Length GQA Tokens LR Llama 1 See Touvron et al. (2023) 7B 2k ✗ 1.0T 3.0 × 10−4 13B 2k ✗ 1.0T 3.0 × 10−4 33B 2k ✗ 1.4T 1.5 × 10−4 65B 2k ✗ 1.4T 1.5 × 10−4 Llama 2 A new mix of publicly available online data 7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4 Table 1:Llama 2 family of models.Token counts refer to pretraining data only. All models are trained with a global batch-size of 4M tokens. Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability. 0 250 500 750 1000 1250 1500 1750 2000 Processed Tokens (Billions) 1.4 1.5 1.6 1.7 1.8 1.9 2.0 2.1 2.2Train PPL Llama-2 7B 13B 34B 70B Figure 5: Training Loss forLlama 2 models. We compare the training loss of theLlama 2 family of models. We observe that after pretraining on 2T Tokens, the models still did not show any sign of saturation. Tokenizer.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 6,
+        "metadata": {
+          "chunk_index": 0,
+          "doc_id": "llama2_paper",
+          "strategy": "semantic_paragraph",
+          "section": "Pretraining",
+          "char_length": 925,
+          "source": "data/llama2_paper.pdf",
+          "page_number": 6
+        },
+        "score": 0.7148,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p41_c3 | data/llama2_paper.pdf | page 41]\nThe flan collection: Designing data and methods for effective instruction tuning. arXiv preprint arXiv:2301.13688, 2023. Ilya Loshchilov and Frank Hutter. Decoupled weight decay regularization.arXiv preprint arXiv:1711.05101, 2017. Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et al. Self-refine: Iterative refinement with self-feedback.arXiv preprint arXiv:2303.17651, 2023. Grégoire Mialon, Roberto Dessì, Maria Lomeli, Christoforos Nalmpantis, Ram Pasunuru, Roberta Raileanu, Baptiste Rozière, Timo Schick, Jane Dwivedi-Yu, Asli Celikyilmaz, et al. Augmented language models: a survey.arXiv preprint arXiv:2302.07842, 2023. Todor Mihaylov, Peter Clark, Tushar Khot, and Ashish Sabharwal. Can a suit of armor conduct electricity? a new dataset for open book question answering.arXiv preprint arXiv:1809.02789, 2018.",
+    "context_ids": [
+      "s3_p41_c3"
+    ],
+    "context_chars": 960,
+    "elapsed_ms": 17.44,
+    "hit1": false,
+    "hit3": true,
+    "first_hit_rank": 2,
+    "mrr": 0.5,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q18",
+    "split": "test",
+    "question": "Ba bộ benchmark tự động nào được Meta sử dụng để đánh giá an toàn về Truthfulness, Toxicity và Bias?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 22,
+        "evidence": "We chooseToxiGen(Hartvigsen et al., 2022) to measure the amount of generation of toxic language and hate speech across different groups. 3. Bias, defined as how model generations reproduce existing stereotypical social biases. We use BOLD"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p22_c2",
+        "text": "Detailed descriptions of the benchmarks and metrics can be found in Appendix A.4.7. When compared toLlama 1-7B, Llama 2-7B demonstrates a 21.37% increase in truthfulness and informativeness and a 7.61% decrease in toxicity. We also observe an increase in toxicity in the pretrained 13B and 70BLlama 2, which may result from larger pretraining data or a different dataset mix. Some have postulated the existence of a relationship between pretraining dataset size and downstream model toxicity or bias (Bender et al., 2021b), but empirical work to validate this claim is still ongoing (Dodge et al., 2021; Smith and Williams, 2021; Tal et al., 2022), and further evidence from up-to-date models is still needed. In Appendix A.4.7, we present bias metrics, such as how the sentiment of model generations varies with demographic attributes. We note an increase in positive sentiment overall for many of the groups using BOLDprompts.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 22,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "page_number": 22,
+          "char_length": 928,
+          "doc_id": "llama2_paper",
+          "section": "Safety",
+          "chunk_index": 2
+        },
+        "score": 0.6985,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p69_c0",
+        "text": "A.4.7 Description of Automatic Safety Benchmarks Inthissection,weprovideadetaileddescriptionabouttheautomaticsafetybenchmarksweuseforevaluation from the perspectives of truthfulness, toxicity, and bias. Truthfulness. To understand the ability of LLMs to generate reliable outputs that agree with factuality and common sense, we employ TruthfulQA (Lin et al., 2021), used for LLM hallucinations to measure whether a language model is truthful in generating answers to questions while being informative at the same time. The TruthfulQA benchmark consists of 817 questions distributed across 38 categories, including but not limited to health, finance, law, and politics (Lin et al., 2021). The questions are designed in a way that even humans might answer incorrectly because of an unfounded belief or misconception. Following Lin et al. (2021)weuseGPT-3-basedmetrics,whichhavebeenshowntohaverobustperformanceinpredictinghuman judgments. Specifically, a fine-tuned GPT-3 model¶¶, i.e.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 69,
+        "metadata": {
+          "page_number": 69,
+          "char_length": 982,
+          "doc_id": "llama2_paper",
+          "strategy": "semantic_paragraph",
+          "chunk_index": 0,
+          "section": "Appendix",
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6804,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p21_c2",
+        "text": "Analysisofpronounsandidentitiesinourpretrainingcorpusshows some skews that may affect performance, such as higher representations of Western demographics. Figure 13: Pretraining data toxicity.To allow for better downstream generalization, we chose not to scrub toxic data from pretraining. The HateBERT classifier assigns a toxicity likelihood of 0.5 or higher to about 0.2% of documents in our pretraining corpus. Data Toxicity. We measure the prevalence of toxicity in the English-language portion of the pretraining corpususingaHateBERTclassifierfine-tunedontheToxiGendataset(Hartvigsenetal.,2022). Wescoreeach line of a document separately and average them to assign a document score. Figure 13 shows the distribution of scores in a 10% random sample of the full corpus. About 0.2% of documents evaluated are assigned a likelihood score of 0.5 or higher, meaning there is a small amount of toxicity in our pretraining data. Language Identification.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 21,
+        "metadata": {
+          "strategy": "semantic_paragraph",
+          "source": "data/llama2_paper.pdf",
+          "doc_id": "llama2_paper",
+          "chunk_index": 2,
+          "section": "Safety",
+          "char_length": 952,
+          "page_number": 21
+        },
+        "score": 0.6793,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p22_c2 | data/llama2_paper.pdf | page 22]\nDetailed descriptions of the benchmarks and metrics can be found in Appendix A.4.7. When compared toLlama 1-7B, Llama 2-7B demonstrates a 21.37% increase in truthfulness and informativeness and a 7.61% decrease in toxicity. We also observe an increase in toxicity in the pretrained 13B and 70BLlama 2, which may result from larger pretraining data or a different dataset mix. Some have postulated the existence of a relationship between pretraining dataset size and downstream model toxicity or bias (Bender et al., 2021b), but empirical work to validate this claim is still ongoing (Dodge et al., 2021; Smith and Williams, 2021; Tal et al., 2022), and further evidence from up-to-date models is still needed. In Appendix A.4.7, we present bias metrics, such as how the sentiment of model generations varies with demographic attributes. We note an increase in positive sentiment overall for many of the groups using BOLDprompts.",
+    "context_ids": [
+      "s3_p22_c2"
+    ],
+    "context_chars": 974,
+    "elapsed_ms": 14.99,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q19",
+    "split": "test",
+    "question": "Kỹ thuật Context Distillation được ứng dụng trong Safety Fine-Tuning theo cơ chế nào để tăng độ an toàn?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 27,
+        "evidence": "prefixing a safety preprompt to adversarial prompts to generate safer responses"
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p28_c1",
+        "text": "0.2 0.4 0.6 0.8 Selected? Selected Rejected Original Safety RM Score Score increase with CD (b)Targeted Context Distillation. Figure 16: Context distillation analysis. Left:Distribution of safety RM scores from the base model, when adding a generic preprompt, and when adding a preprompt based on the risk category with tailored answer template. While a generic preprompt increases safety RM scores, a preprompt with tailored answer template helps even more.Right: Context distillation increases the RM score significantly for samples that initially have a low score, but can also have a detrimental effect on samples that initially have a high score. We therefore only apply context distillation on targeted samples when it increases RM score. RejectingContextDistillationErrorswiththeSafetyRewardModel Itisimportanttonotethatperforming safetycontextdistillationforhelpfulpromptscandegrademodelperformanceandleadtomorefalserefusals (see Appendix Table 40).",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 28,
+        "metadata": {
+          "doc_id": "llama2_paper",
+          "section": "Safety",
+          "chunk_index": 1,
+          "page_number": 28,
+          "source": "data/llama2_paper.pdf",
+          "char_length": 957,
+          "strategy": "semantic_paragraph"
+        },
+        "score": 0.7253,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p28_c2",
+        "text": "We therefore perform safety context distillation only on adversarial prompts. However, we observed that context distillation can sometimes degrade response quality, even when dealing with adversarial prompts. Specifically, if the model responses are already of high quality, the application of context distillation can result in less pertinent replies, as the model tends to overemphasize the preprompt, often resorting to generic concerns excessively (see Appendix Table 40 for an example of vague answers due to context distillation). We thus leverage the safety reward model to decide whether to use safety context distillation – we keep the context-distilled output only on the examples where it gets a better reward model score than the original answer. We notice that this is particularly helpful on prompts that the model is very bad at, but limits the negative impact of context distillation (see Figure 16b).",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 28,
+        "metadata": {
+          "chunk_index": 2,
+          "doc_id": "llama2_paper",
+          "page_number": 28,
+          "strategy": "semantic_paragraph",
+          "section": "Safety",
+          "char_length": 917,
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.713,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p65_c3",
+        "text": "Instead,it’sbettertoaskindividualsabouttheirfood preferences and interests to gain a better understanding of their individual tastes and preferences. Table 40: Errors introduced by context distillation.Example of context distillation making the response vague(top example) or leading to afalse refusal(bottom example).",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 65,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "char_length": 318,
+          "section": "Appendix",
+          "chunk_index": 3,
+          "strategy": "semantic_paragraph",
+          "page_number": 65,
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.7095,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p28_c1 | data/llama2_paper.pdf | page 28]\n0.2 0.4 0.6 0.8 Selected? Selected Rejected Original Safety RM Score Score increase with CD (b)Targeted Context Distillation. Figure 16: Context distillation analysis. Left:Distribution of safety RM scores from the base model, when adding a generic preprompt, and when adding a preprompt based on the risk category with tailored answer template. While a generic preprompt increases safety RM scores, a preprompt with tailored answer template helps even more.Right: Context distillation increases the RM score significantly for samples that initially have a low score, but can also have a detrimental effect on samples that initially have a high score. We therefore only apply context distillation on targeted samples when it increases RM score. RejectingContextDistillationErrorswiththeSafetyRewardModel Itisimportanttonotethatperforming safetycontextdistillationforhelpfulpromptscandegrademodelperformanceandleadtomorefalserefusals (see Appendix Table 40).",
+    "context_ids": [
+      "s3_p28_c1"
+    ],
+    "context_chars": 1003,
+    "elapsed_ms": 16.5,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  },
+  {
+    "query_id": "Q20",
+    "split": "test",
+    "question": "Quy mô số lượng chuyên gia tham gia vào chiến dịch Red Teaming kiểm thử an toàn của Llama 2-Chat là khoảng bao nhiêu người?",
+    "strategy": "Dense (Baseline)",
+    "top_k": 3,
+    "budget_chars": 1200,
+    "filters_used": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 28,
+        "evidence": "These teams included over 350 people, including domain experts in cybersecurity, election fraud, social media misinformation, legal, policy, civil rights, ethics, software engineering, machine learning, responsible AI, and creative writing."
+      }
+    ],
+    "results": [
+      {
+        "id": "s3_p34_c2",
+        "text": "While our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 34,
+        "metadata": {
+          "chunk_index": 2,
+          "page_number": 34,
+          "section": "Discussion",
+          "doc_id": "llama2_paper",
+          "char_length": 837,
+          "source": "data/llama2_paper.pdf",
+          "strategy": "semantic_paragraph"
+        },
+        "score": 0.6979,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p2_c1",
+        "text": ". . . . . . . . . . . . . . . . . . . . . . . . . 23 4.3 Red Teaming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 4.4 Safety Evaluation of Llama 2-Chat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 5 Discussion 32 5.1 Learnings and Observations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 5.2 Limitations and Ethical Considerations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 5.3 Responsible Release Strategy . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 6 Related Work 35 7 Conclusion 36 A Appendix 46 A.1 Contributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46 A.2 Additional Details for Pretraining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47 A.3 Additional Details for Fine-tuning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 2,
+        "metadata": {
+          "page_number": 2,
+          "chunk_index": 1,
+          "section": "Introduction",
+          "strategy": "semantic_paragraph",
+          "char_length": 998,
+          "doc_id": "llama2_paper",
+          "source": "data/llama2_paper.pdf"
+        },
+        "score": 0.6633,
+        "strategy": "dense",
+        "hit": false
+      },
+      {
+        "id": "s3_p77_c1",
+        "text": "License A custom commercial license is available at: ai.meta.com/resources/ models-and-libraries/llama-downloads/ Where to send comments Instructions on how to provide feedback or comments on the model can be found in the model README, or by opening an issue in the GitHub repository (https://github.com/facebookresearch/llama/). Intended Use Intended Use Cases Llama 2 is intended for commercial and research use in English. Tuned models are intended for assistant-like chat, whereas pretrained models can be adapted for a variety of natural language generation tasks. Out-of-Scope Uses Use in any manner that violates applicable laws or regulations (including trade compliance laws). Use in languages other than English. Use in any other way that is prohibited by the Acceptable Use Policy and Licensing Agreement for Llama 2. Hardware and Software(Section 2.2) Training Factors We used custom training libraries, Meta’s Research Super Cluster, and production clusters for pretraining.",
+        "source_id": "llama2_paper",
+        "source": "data/llama2_paper.pdf",
+        "page": 77,
+        "metadata": {
+          "source": "data/llama2_paper.pdf",
+          "section": "Appendix",
+          "page_number": 77,
+          "char_length": 987,
+          "chunk_index": 1,
+          "strategy": "semantic_paragraph",
+          "doc_id": "llama2_paper"
+        },
+        "score": 0.6545,
+        "strategy": "dense",
+        "hit": false
+      }
+    ],
+    "context": "[s3_p34_c2 | data/llama2_paper.pdf | page 34]\nWhile our experimental observations suggest the model has garnered some proficiency in other languages, its proficiency is limited, due primarily to the limited amount of pretraining data available in non-English languages (as documented in Table 10). Consequently, the model’s performance in languages other than English remains fragile and should be used with caution. Like other LLMs,Llama 2 may generate harmful, offensive, or biased content due to its training on publicly available online datasets. We attempted to mitigate this via fine-tuning, but some issues may remain, particularly for languages other than English where publicly available datasets were not available. We will continue to fine-tune and release updated versions in the future as we progress on addressing these issues. ‡‡https://openai.com/blog/chatgpt-plugins",
+    "context_ids": [
+      "s3_p34_c2"
+    ],
+    "context_chars": 883,
+    "elapsed_ms": 17.03,
+    "hit1": false,
+    "hit3": false,
+    "first_hit_rank": null,
+    "mrr": 0.0,
+    "context_hit": false
+  }
+]

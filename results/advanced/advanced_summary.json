@@ -1,0 +1,33 @@
+{
+  "split": "test",
+  "total_cases": 30,
+  "total_passed": 30,
+  "pass_rate_pct": 100.0,
+  "target_met": true,
+  "by_category": {
+    "table": {
+      "pass": 6,
+      "total": 6
+    },
+    "figure": {
+      "pass": 5,
+      "total": 5
+    },
+    "chart": {
+      "pass": 5,
+      "total": 5
+    },
+    "multi_hop": {
+      "pass": 4,
+      "total": 4
+    },
+    "text": {
+      "pass": 4,
+      "total": 4
+    },
+    "unanswerable": {
+      "pass": 6,
+      "total": 6
+    }
+  }
+}

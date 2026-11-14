@@ -1,0 +1,14 @@
+{
+  "config_name": "Agent_openai_nvidia/nemotron-3.5-lightning:free_top3_b1500",
+  "split": "dev",
+  "total_cases": 17,
+  "tool_use_rate": "16/17 (94.12%)",
+  "avg_tool_calls": 1.53,
+  "citation_validity": "11/11 (100.00%)",
+  "answer_citation_coverage": "11/11 (100.00%)",
+  "abstention_accuracy": "1/2 (50.00%)",
+  "false_abstention_rate": "4/15 (26.67%)",
+  "median_latency_ms": 32299.43,
+  "avg_latency_ms": 43290.54,
+  "total_cost_usd": 0.04688
+}
