@@ -1,0 +1,170 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "question": "Các phiên bản mô hình được phát hành chính thức của Llama 2 và Llama 2-Chat gồm những kích thước tham số nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "question": "Mô hình Llama 2 được tiền huấn luyện trên tổng lượng dữ liệu là bao nhiêu token?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "question": "Độ dài ngữ cảnh (context length) của Llama 2 là bao nhiêu và thay đổi thế nào so với Llama 1?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "question": "Kỹ thuật Grouped-Query Attention (GQA) được sử dụng trong các mô hình kích thước nào của Llama 2 và nhằm mục đích gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "question": "Tokenizer của Llama 2 sử dụng thuật toán nào và kích thước từ vựng (vocabulary size) là bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "question": "Trong phần tiền huấn luyện, những siêu tham số nào được thiết lập cho optimizer AdamW?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "question": "Tổng lượng khí thải carbon footprint phát sinh từ quá trình pretraining Llama 2 ước tính là bao nhiêu tấn CO2eq?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "question": "Trong giai đoạn Supervised Fine-Tuning (SFT), nhóm tác giả đã thu thập bao nhiêu mẫu chú thích chất lượng cao trước khi dừng lại?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q09",
+    "split": "dev",
+    "question": "Trong giai đoạn Reward Modeling của RLHF, hai mô hình phần thưởng riêng biệt được huấn luyện nhằm tối ưu cho hai khía cạnh nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q10",
+    "split": "dev",
+    "question": "Hai thuật toán học tăng cường chính nào được kết hợp áp dụng qua các vòng lặp RLHF của Llama 2-Chat?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "question": "Phương pháp Ghost Attention (GAtt) được đề xuất nhằm giải quyết vấn đề gì trong các cuộc hội thoại?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "question": "Trên bộ benchmark MMLU (5-shot), mô hình pretrained Llama 2 70B đạt kết quả chính xác bao nhiêu phần trăm?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "question": "Trên bộ benchmark lập trình HumanEval (0-shot pass@1), phiên bản Llama 2 70B đạt kết quả là bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "question": "Tỷ lệ dữ liệu tiếng Anh chiếm khoảng bao nhiêu phần trăm trong tập dữ liệu tiền huấn luyện của Llama 2?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "question": "Trong phần Fine-tuning về Safety, các câu nhắc (prompts) có yếu tố rủi ro được phân loại thành ba danh mục chính nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q21",
+    "split": "dev",
+    "question": "Kiến trúc mô hình Llama 3 sử dụng cơ chế nào để mở rộng độ dài ngữ cảnh lên 128k tokens?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "Q22",
+    "split": "dev",
+    "question": "Chi phí tiền điện và tổng kinh phí tài chính cụ thể bằng đô la Mỹ (USD) để huấn luyện cụm GPU cho mô hình Llama 2 70B là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "Q16",
+    "split": "test",
+    "question": "Kiến trúc Transformer của Llama 2 sử dụng những kỹ thuật tiền chuẩn hóa, hàm kích hoạt và mã hóa vị trí nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q17",
+    "split": "test",
+    "question": "Quá trình fine-tuning có giám sát (SFT) được cấu hình với các siêu tham số learning rate, batch size và sequence length là bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q18",
+    "split": "test",
+    "question": "Ba bộ benchmark tự động nào được Meta sử dụng để đánh giá an toàn về Truthfulness, Toxicity và Bias?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q19",
+    "split": "test",
+    "question": "Kỹ thuật Context Distillation được ứng dụng trong Safety Fine-Tuning theo cơ chế nào để tăng độ an toàn?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q20",
+    "split": "test",
+    "question": "Quy mô số lượng chuyên gia tham gia vào chiến dịch Red Teaming kiểm thử an toàn của Llama 2-Chat là khoảng bao nhiêu người?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer"
+  },
+  {
+    "id": "Q23",
+    "split": "test",
+    "question": "Điểm số và thứ hạng cụ thể của mô hình GPT-4 trên nền tảng lập trình thi đấu Codeforces được báo cáo trong bài báo Llama 2 là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  },
+  {
+    "id": "Q24",
+    "split": "test",
+    "question": "Mô hình Llama 2-Chat sử dụng kiến trúc Mixture-of-Experts (MoE) với bao nhiêu chuyên gia (experts) được kích hoạt cho mỗi token?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain"
+  }
+]

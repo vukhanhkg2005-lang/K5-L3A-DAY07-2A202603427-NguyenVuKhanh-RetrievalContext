@@ -1,0 +1,19 @@
+{
+  "dataset": "data/llama2_paper.pdf",
+  "total_pages_extracted": 77,
+  "embedding_model": "all-MiniLM-L6-v2",
+  "strategies": {
+    "strategy_1_recursive": {
+      "num_chunks": 348,
+      "avg_char_length": 833.2
+    },
+    "strategy_2_token": {
+      "num_chunks": 362,
+      "avg_char_length": 868.44
+    },
+    "strategy_3_semantic": {
+      "num_chunks": 313,
+      "avg_char_length": 829.99
+    }
+  }
+}

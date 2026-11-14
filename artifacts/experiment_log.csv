@@ -1,0 +1,4 @@
+strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
+A,recursive,1000,200,page_number+section,none,all-MiniLM-L6-v2,Kích thước cố định giữ ngữ cảnh tốt phân đoạn tự nhiên,0.2000,0.4667,0.6000,0.6000,Duy trì phong độ ổn định ở cả hai tập
+B,token,250,50,page_number+section,none,all-MiniLM-L6-v2,Chuẩn hóa độ dài token khớp window size 256 của model,0.2000,0.4000,0.6000,0.6000,Hiệu suất dev thấp hơn do cắt mù giữa câu
+C,semantic,1000,0,page_number+section,section_filter,all-MiniLM-L6-v2,Gom đoạn ngữ nghĩa kết hợp metadata filter loại trừ nhiễu chéo,0.3333,0.6667,0.4000,0.6000,Vượt trội trên Dev nhờ filter chặn nhiễu References và Mục lục

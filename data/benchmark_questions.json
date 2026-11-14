@@ -1,0 +1,387 @@
+[
+  {
+    "id": "Q01",
+    "split": "dev",
+    "question": "Các phiên bản mô hình được phát hành chính thức của Llama 2 và Llama 2-Chat gồm những kích thước tham số nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Llama 2 và Llama 2-Chat được phát hành chính thức với 3 kích thước: 7B, 13B và 70B parameters (phiên bản 34B có được huấn luyện nhưng không phát hành).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 4,
+        "evidence": "We are releasing variants ofLlama 2 with 7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper but are not releasing."
+      }
+    ]
+  },
+  {
+    "id": "Q02",
+    "split": "dev",
+    "question": "Mô hình Llama 2 được tiền huấn luyện trên tổng lượng dữ liệu là bao nhiêu token?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Llama 2 được tiền huấn luyện trên tổng cộng 2 nghìn tỷ (2 trillion) tokens dữ liệu từ các nguồn công khai.",
+    "filter": {
+      "section": "Pretraining"
+    },
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "We trained on 2 trillion tokens of data as this provides a good performance–cost trade-off"
+      }
+    ]
+  },
+  {
+    "id": "Q03",
+    "split": "dev",
+    "question": "Độ dài ngữ cảnh (context length) của Llama 2 là bao nhiêu và thay đổi thế nào so với Llama 1?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Độ dài ngữ cảnh của Llama 2 được tăng gấp đôi so với Llama 1 (từ 2048 lên 4096 tokens).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "trained on 40% more total tokens,doubledthecontextlength,andusedgrouped-queryattention(GQA)"
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "7B 4k ✗ 2.0T 3.0 × 10−4 13B 4k ✗ 2.0T 3.0 × 10−4 34B 4k ✓ 2.0T 1.5 × 10−4 70B 4k ✓ 2.0T 1.5 × 10−4"
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "split": "dev",
+    "question": "Kỹ thuật Grouped-Query Attention (GQA) được sử dụng trong các mô hình kích thước nào của Llama 2 và nhằm mục đích gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Grouped-Query Attention (GQA) được sử dụng trên các mô hình lớn hơn là 34B và 70B nhằm mục đích cải thiện khả năng mở rộng khi suy luận (inference scalability).",
+    "filter": {
+      "section": "Pretraining"
+    },
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "Bigger models — 34B and 70B — use Grouped-Query Attention (GQA) for improved inference scalability."
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "split": "dev",
+    "question": "Tokenizer của Llama 2 sử dụng thuật toán nào và kích thước từ vựng (vocabulary size) là bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Tokenizer của Llama 2 sử dụng thuật toán BPE (Bytepair Encoding) từ thư viện SentencePiece với tổng kích thước từ vựng là 32k tokens (32,000).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "The total vocabulary size is 32k tokens."
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 6,
+        "evidence": "SentencePiece (Kudo and Richardson, 2018)"
+      }
+    ]
+  },
+  {
+    "id": "Q06",
+    "split": "dev",
+    "question": "Trong phần tiền huấn luyện, những siêu tham số nào được thiết lập cho optimizer AdamW?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "AdamW optimizer sử dụng beta1 = 0.9, beta2 = 0.95, eps = 10^-5, warmup 2000 steps, weight decay = 0.1 và gradient clipping = 1.0.",
+    "filter": {
+      "section": "Pretraining"
+    },
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "AdamW optimizer (Loshchilov and Hutter, 2017), withβ1 = 0.9, β2 = 0.95,eps = 10−5."
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "split": "dev",
+    "question": "Tổng lượng khí thải carbon footprint phát sinh từ quá trình pretraining Llama 2 ước tính là bao nhiêu tấn CO2eq?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Tổng lượng phát thải khí nhà kính ước tính trong quá trình pretraining là 539 tCO2eq (được bù đắp 100% bởi chương trình phát triển bền vững của Meta).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 7,
+        "evidence": "We estimate the total emissions for training to be539 tCO2eq, of which 100% were directly offset by Meta’s sustainability program."
+      },
+      {
+        "source_id": "llama2_paper",
+        "page": 7,
+        "evidence": "Total 3311616 539.00 Table 2:CO2 emissions during pretraining."
+      }
+    ]
+  },
+  {
+    "id": "Q08",
+    "split": "dev",
+    "question": "Trong giai đoạn Supervised Fine-Tuning (SFT), nhóm tác giả đã thu thập bao nhiêu mẫu chú thích chất lượng cao trước khi dừng lại?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Nhóm nghiên cứu đã dừng thu thập chú thích SFT sau khi đạt tổng cộng 27,540 chú thích chất lượng cao.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 9,
+        "evidence": "We stopped annotating SFT after collecting a total of 27,540 annotations."
+      }
+    ]
+  },
+  {
+    "id": "Q09",
+    "split": "dev",
+    "question": "Trong giai đoạn Reward Modeling của RLHF, hai mô hình phần thưởng riêng biệt được huấn luyện nhằm tối ưu cho hai khía cạnh nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Hai mô hình phần thưởng riêng biệt được huấn luyện: một mô hình tối ưu cho Helpfulness (Helpfulness RM) và một mô hình tối ưu cho Safety (Safety RM).",
+    "filter": {
+      "section": "Fine-tuning"
+    },
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 10,
+        "evidence": "To address this, we train two separate reward models, one optimized for helpfulness (referred to asHelpfulness RM) and another for safety (Safety RM)."
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "split": "dev",
+    "question": "Hai thuật toán học tăng cường chính nào được kết hợp áp dụng qua các vòng lặp RLHF của Llama 2-Chat?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Hai thuật toán chính được áp dụng qua các vòng lặp RLHF là Proximal Policy Optimization (PPO) và Rejection Sampling fine-tuning.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 13,
+        "evidence": "We explored RLHF fine-tuning with two main algorithms: • Proximal Policy Optimization (PPO)(Schulman et al., 2017), the standard in RLHF literature. • RejectionSamplingfine-tuning"
+      }
+    ]
+  },
+  {
+    "id": "Q11",
+    "split": "dev",
+    "question": "Phương pháp Ghost Attention (GAtt) được đề xuất nhằm giải quyết vấn đề gì trong các cuộc hội thoại?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ghost Attention (GAtt) giải quyết vấn đề mô hình hay quên chỉ dẫn ban đầu sau vài lượt hội thoại (multi-turn dialogue), giúp kiểm soát chỉ dẫn xuyên suốt hội thoại.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 16,
+        "evidence": "To address these limitations, we propose Ghost Attention (GAtt), a very simple method inspired by Context Distillation (Bai et al., 2022b) that hacks the fine-tuning data to help the attention focus in a multi-stage process. GAtt enables dialogue control over multiple turns"
+      }
+    ]
+  },
+  {
+    "id": "Q12",
+    "split": "dev",
+    "question": "Trên bộ benchmark MMLU (5-shot), mô hình pretrained Llama 2 70B đạt kết quả chính xác bao nhiêu phần trăm?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Mô hình pretrained Llama 2 70B đạt độ chính xác 68.9% trên bài đánh giá MMLU (5-shot).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 8,
+        "evidence": "MMLU (5-shot) 70.0 86.4 69.3 78.3 68.9"
+      }
+    ]
+  },
+  {
+    "id": "Q13",
+    "split": "dev",
+    "question": "Trên bộ benchmark lập trình HumanEval (0-shot pass@1), phiên bản Llama 2 70B đạt kết quả là bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Phiên bản Llama 2 70B đạt 29.9% trên bài kiểm tra HumanEval (0-shot).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 8,
+        "evidence": "HumanEval (0-shot) 48.1 67.0 26.2 – 29.9"
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "split": "dev",
+    "question": "Tỷ lệ dữ liệu tiếng Anh chiếm khoảng bao nhiêu phần trăm trong tập dữ liệu tiền huấn luyện của Llama 2?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Dữ liệu tiếng Anh (en) chiếm 89.70% trong kho ngữ liệu tiền huấn luyện của Llama 2.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 22,
+        "evidence": "Language Percent Language Percent en 89.70% uk 0.07% unknown 8.38% ko 0.06%"
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "split": "dev",
+    "question": "Trong phần Fine-tuning về Safety, các câu nhắc (prompts) có yếu tố rủi ro được phân loại thành ba danh mục chính nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ba danh mục rủi ro chính gồm: (1) illicit and criminal activities, (2) hateful and harmful activities, và (3) unqualified advice.",
+    "filter": {
+      "section": "Safety"
+    },
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 23,
+        "evidence": "Theriskcategoriesconsideredcanbebroadlydividedintothefollowingthreecategories: illicitandcriminal activities(e.g., terrorism, theft, human trafficking);hateful and harmful activities"
+      }
+    ]
+  },
+  {
+    "id": "Q21",
+    "split": "dev",
+    "question": "Kiến trúc mô hình Llama 3 sử dụng cơ chế nào để mở rộng độ dài ngữ cảnh lên 128k tokens?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Tài liệu không có đủ bằng chứng để trả lời câu hỏi này.",
+    "absence_reason": "Bài báo Llama 2 xuất bản năm 2023 chỉ nghiên cứu các mô hình Llama 2 với context length 4096 tokens, hoàn toàn không có thông tin về mô hình thế hệ tiếp theo Llama 3 hay kỹ thuật mở rộng ngữ cảnh lên 128k tokens."
+  },
+  {
+    "id": "Q22",
+    "split": "dev",
+    "question": "Chi phí tiền điện và tổng kinh phí tài chính cụ thể bằng đô la Mỹ (USD) để huấn luyện cụm GPU cho mô hình Llama 2 70B là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Tài liệu không có đủ bằng chứng để trả lời câu hỏi này.",
+    "absence_reason": "Tài liệu chỉ công bố tổng thời gian tính toán của GPU (3,311,616 GPU hours trong Table 2) và lượng phát thải carbon (539 tCO2eq), hoàn toàn không công bố số liệu về chi phí tiền điện hoặc ngân sách tài chính bằng USD."
+  },
+  {
+    "id": "Q16",
+    "split": "test",
+    "question": "Kiến trúc Transformer của Llama 2 sử dụng những kỹ thuật tiền chuẩn hóa, hàm kích hoạt và mã hóa vị trí nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Llama 2 sử dụng chuẩn hóa trước với RMSNorm, hàm kích hoạt SwiGLU và nhúng vị trí quay Rotary Positional Embeddings (RoPE).",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 5,
+        "evidence": "We use the standard transformer architecture (Vaswani et al., 2017), apply pre-normalization using RMSNorm (Zhang and Sennrich, 2019), use the SwiGLU activation function (Shazeer, 2020), and rotary positional embeddings (RoPE, Su et al. 2022)."
+      }
+    ]
+  },
+  {
+    "id": "Q17",
+    "split": "test",
+    "question": "Quá trình fine-tuning có giám sát (SFT) được cấu hình với các siêu tham số learning rate, batch size và sequence length là bao nhiêu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Giai đoạn SFT sử dụng initial learning rate = 2e-5 với cosine schedule, weight decay = 0.1, batch size = 64, và sequence length = 4096 tokens.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 9,
+        "evidence": "For supervised fine-tuning, we use a cosine learning rate schedule with an initial learning rate of2 × 10−5, a weight decay of 0.1, a batch size of 64, and a sequence length of 4096 tokens."
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "split": "test",
+    "question": "Ba bộ benchmark tự động nào được Meta sử dụng để đánh giá an toàn về Truthfulness, Toxicity và Bias?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ba bộ benchmark an toàn gồm TruthfulQA (đánh giá tính chân thực), ToxiGen (đánh giá tính độc hại) và BOLD (đánh giá định kiến/thiên vị).",
+    "filter": {
+      "section": "Safety"
+    },
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 22,
+        "evidence": "We chooseToxiGen(Hartvigsen et al., 2022) to measure the amount of generation of toxic language and hate speech across different groups. 3. Bias, defined as how model generations reproduce existing stereotypical social biases. We use BOLD"
+      }
+    ]
+  },
+  {
+    "id": "Q19",
+    "split": "test",
+    "question": "Kỹ thuật Context Distillation được ứng dụng trong Safety Fine-Tuning theo cơ chế nào để tăng độ an toàn?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Context Distillation ghép tiền tố an toàn (safety preprompt) vào trước prompt để sinh phản hồi an toàn mẫu, sau đó dùng fine-tuning để mô hình học cách ứng xử an toàn này mà không cần preprompt nữa.",
+    "filter": {
+      "section": "Safety"
+    },
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 27,
+        "evidence": "prefixing a safety preprompt to adversarial prompts to generate safer responses"
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "split": "test",
+    "question": "Quy mô số lượng chuyên gia tham gia vào chiến dịch Red Teaming kiểm thử an toàn của Llama 2-Chat là khoảng bao nhiêu người?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Hơn 350 người (over 350 people) gồm các chuyên gia trong nhiều lĩnh vực an ninh mạng, pháp lý, chính sách, đạo đức... đã tham gia Red Teaming.",
+    "filter": null,
+    "gold": [
+      {
+        "source_id": "llama2_paper",
+        "page": 28,
+        "evidence": "These teams included over 350 people, including domain experts in cybersecurity, election fraud, social media misinformation, legal, policy, civil rights, ethics, software engineering, machine learning, responsible AI, and creative writing."
+      }
+    ]
+  },
+  {
+    "id": "Q23",
+    "split": "test",
+    "question": "Điểm số và thứ hạng cụ thể của mô hình GPT-4 trên nền tảng lập trình thi đấu Codeforces được báo cáo trong bài báo Llama 2 là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Tài liệu không có đủ bằng chứng để trả lời câu hỏi này.",
+    "absence_reason": "Bài báo chỉ so sánh với GPT-4 trên các bộ benchmark học thuật MMLU, GSM8K và HumanEval (Table 4), không thực hiện kiểm thử hay công bố bất kỳ số liệu nào trên nền tảng lập trình Codeforces."
+  },
+  {
+    "id": "Q24",
+    "split": "test",
+    "question": "Mô hình Llama 2-Chat sử dụng kiến trúc Mixture-of-Experts (MoE) với bao nhiêu chuyên gia (experts) được kích hoạt cho mỗi token?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Tài liệu không có đủ bằng chứng để trả lời câu hỏi này.",
+    "absence_reason": "Tất cả các phiên bản Llama 2 và Llama 2-Chat đều sử dụng kiến trúc Dense Transformer chuẩn (dense autoregressive transformer), không áp dụng kiến trúc Mixture-of-Experts (MoE) nên tài liệu không có thông số số lượng experts."
+  }
+]
